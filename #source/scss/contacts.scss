@@ -1,0 +1,292 @@
+
+.get-in-touch {
+    padding: 80px 0;
+    
+
+    // .get-in-touch__container
+
+    &__container {
+    }
+
+    // .get-in-touch__inner
+
+    &__inner {
+        
+        
+    }
+
+    &__main-content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .get-in-touch__contact-info
+
+    &__contact-info {
+        margin-right: 40px;
+        max-width: 420px;
+    }
+
+    &__google-card{
+        width: 700px;
+    }
+}
+.container {
+}
+.contact-info {
+
+    // .contact-info__subtitle
+
+    &__subtitle {
+    }
+
+    // .contact-info__title
+
+    &__title {
+    }
+
+    // .contact-info__list
+
+    &__list {
+        position: relative;
+        margin-bottom: 48px;
+        margin-top: 40px;
+    }
+
+    // .contact-info__item
+
+    &__item {
+        padding-left: 36px;
+        margin-bottom: 24px;
+        &:nth-child(1)::before{
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            left: 0;
+            background-image: url("../img/contacts/icons/Chat.svg");
+            background-repeat: no-repeat;
+        }
+        &:nth-child(2)::before{
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            left: 0;
+            background-image: url("../img/contacts/icons/iPhone.svg");
+            background-repeat: no-repeat;
+        }
+        &:nth-child(3)::before{
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            left: 0;
+            background-image: url("../img/contacts/icons/outline.svg");
+            background-repeat: no-repeat;
+        }
+    }
+
+    // .contact-info__follow-us-content
+
+    &__follow-us-content {
+    }
+
+    // .contact-info__header
+
+    &__header {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #1E212C;
+        margin-bottom: 24px;
+    }
+
+    // .contact-info__follow-us-list
+
+    &__follow-us-list {
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+    }
+
+    // .contact-info__follow-us-item
+
+    &__follow-us-item {
+    }
+
+    // .contact-info__follow-us-link
+
+    &__follow-us-link {
+        transition: all 0.3s;
+        &:hover{
+            transition: all 0.3s;
+            color: #FF3F3A;
+        }
+        color: #787A80;
+        font-size: 25px;
+    }
+}
+.subtitle {
+}
+.title-46px {
+}
+.item-contact-info {
+
+    // .item-contact-info__action-name
+
+    &__action-name {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        color: #787A80;
+    }
+
+    // .item-contact-info__action
+
+    &__action {
+        font-size: 18px;
+        line-height: 150%;
+        color: #1E212C;
+        
+    }
+}
+
+
+
+
+
+//================================================
+
+.questions {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    // .questions__image-box
+
+    &__image-box {
+        margin-right: 80px;
+        max-width: 400px;
+        img{
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // .questions__image
+
+    &__image {
+    }
+
+    // .questions__main-content
+
+    &__main-content {
+        flex: 0 1 750px;
+        max-width: 740px;
+    }
+
+    // .questions__subtitle
+
+    &__subtitle {
+    }
+
+    // .questions__title
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    // .questions__form
+
+    &__form {
+    }
+}
+.form-questions {
+
+    // .form-questions__important-info
+
+    &__important-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 24px;
+        input{
+            // flex: 0 1 50%;
+        }
+    }
+
+    // .form-questions__label
+
+    &__label {
+    }
+
+    // .form-questions__input
+
+    &__input {
+    }
+
+    // .form-questions__textarea
+
+    &__textarea {
+        height: 120px;
+        max-width: 100%;
+    }
+}
+.form-question {
+
+    // .form-question__submit-box
+
+    &__submit-box {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 40px;
+    }
+
+    // .form-question__btn
+
+    &__btn {
+        flex: 1 1 auto;
+        
+    }
+}
+
+.form-question__checkbox-label{
+      max-width: 315px;  
+      font-size: 16px;
+      line-height: 160%;
+      color: #424551;
+      padding-left: 28px;
+      margin-right: 20px;
+      position: relative;
+
+}
+
+.form-question__input{
+    // bottom: 0 !important;
+    top: 5px !important;
+    height: 100%;
+}
+.form-question__checkbox-image{
+    bottom: 0 !important;
+    top: 6px !important;
+}
+
+
+.form-sign-in {
+
+    // .form-sign-in__checkbox-label
+
+    &__checkbox-label {
+    }
+
+    // .form-sign-in__checkbox
+
+    &__checkbox {
+    }
+
+    // .form-sign-in__checkbox-image
+
+    &__checkbox-image {
+    }
+}

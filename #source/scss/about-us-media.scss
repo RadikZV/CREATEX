@@ -1,0 +1,329 @@
+@media (max-width: 1024px) {
+    .school__header{
+        margin-bottom: 30px;
+    }
+
+    .school__link-box{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:990.98px) {
+    .directions__content{
+        grid-template-columns: repeat(2, minmax(250px, 390px));
+        gap: 20px;
+    }
+
+    
+}
+
+
+
+//  7   6   8    px   ===========================
+
+@media (min-width: 768px) {
+    .school__image-box{
+        min-width: 350px !important;
+    }
+
+    .statistic__item{
+        color: #1E212C;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        // .item-core-values{
+        //     flex: 0 1 25%;
+        // }
+    }
+
+    .item-core-values{
+        &:not(:last-child)::before{
+            content: "";
+            position: absolute;
+            // border: ;
+            height: 100%;
+            width: 2px;
+            // border: 1px solid linear-gradient(270.01deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
+            top: 0;
+            right: -45px;
+            background: linear-gradient(270.01deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
+
+        }
+    }
+
+    // .main__slider-box{
+    //     display: none;
+    // }
+
+    .about-us-slider{
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .school__inner{
+        flex-direction: column;
+    }
+
+    .school__body{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .school {
+        padding: 40px 0;
+    }
+
+    .statistic__body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .statistic__image-box{
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .statistic__list{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .statistic__image-box::after {
+        content: "";
+        display: none;
+    }
+    .statistic{
+        padding: 50px 0;
+    }
+        
+
+    .item-core-values{
+        
+        &:nth-child(1)::after{
+            content: "";
+            position: absolute;
+            // border: ;
+            height: 100%;
+            width: 2px;
+            // border: 1px solid linear-gradient(270.01deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
+            top: 0;
+            right: -20px;
+            background: linear-gradient(270.01deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
+
+        }
+        &:nth-child(3)::after{
+            content: "";
+            position: absolute;
+            // border: ;
+            height: 100%;
+            width: 2px;
+            // border: 1px solid linear-gradient(270.01deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
+            top: 0;
+            right: -20px;
+            background: linear-gradient(270.01deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
+
+        }
+    }
+
+    .core-values__row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 40px;
+        row-gap: 30px;
+        // gap: 20px;
+    }
+
+    .core-values{
+        padding: 50px 0;
+    }
+
+
+
+    .process{
+        padding: 50px 0;
+    }
+    .process__img-box{
+        display: none;
+    }
+
+    .process__body{
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .about-us-slider{
+        display: block;
+    }
+
+    .tutors{
+        display: none;
+    }
+
+    .jobs__content{
+        gap: 40px;
+    }
+
+    .jobs__header{
+        margin-bottom: 30px;
+    }
+
+    .jobs{
+        padding: 50px 0;
+    }
+    
+}
+
+//  6   2   0    ==========================
+
+
+@media (max-width:620px) {
+    .directions__content{
+        grid-template-columns: repeat(1, minmax(250px, 390px));
+        gap: 20px;
+    }
+
+    .process__header {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width:620px) {
+    .process__list {
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .process__list {
+        margin-left: 0px;
+    }
+}
+
+//  4   2   5    px   ===========================
+
+@media (max-width: 425px) {
+    .main{
+        padding-top: 50px;
+    }
+    .school {
+        padding: 30px 0;
+    }
+
+    .school__small-title {
+        font-size: 18px;
+    }
+
+    .school__text {
+        font-size: 14px;
+    }
+
+    .school__header {
+        margin-bottom: 20px;
+    }
+
+    .school__small-title{
+        margin-bottom: 10px;
+    }
+
+    .school__link{
+        font-size: 14px;
+        padding: 20px 10px;
+    }
+
+    .school__link-box{
+        gap: 10px;
+    }
+
+
+    .statistic{
+        padding: 40px 0 30px 0;
+    }
+
+    .statistic__link{
+        margin-bottom: 35px;
+    }
+
+    .item-core-values:nth-child(1)::after,
+    .item-core-values:nth-child(3)::after{
+        display: none;
+    }
+
+    .core-values__row{
+        grid-template-columns: 1fr;
+    }
+
+    .item-core-values__title{
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+
+    .item-core-values__text{
+        font-size: 14px;
+    }
+
+    .item-core-values__image-box{
+        margin-bottom: 10px;
+    }
+
+    .core-values__header{
+        margin-bottom: 40px;
+    }
+
+    .core-values{
+        padding: 30px 0;
+    }
+
+
+
+
+    .course-item__body {
+        padding: 25px;
+    }
+
+    .course-item__kind-of-cource{
+        margin-bottom: 10px;
+    }
+    
+    .course-item__link {
+        margin-top: 15px;
+    }
+
+    .directions__header{
+        margin-bottom: 30px;
+    }
+
+    .directions{
+        padding: 40px 0 ;
+    }
+
+    .process__item {
+        padding-left: 30px;
+    }
+
+    .process__item:not(:last-child){
+        padding-bottom: 0;
+    }
+
+    .process{
+        padding: 30px 0 40px 0;
+    }
+
+    .jobs__content{
+        grid-template-columns: repeat(2, minmax(50px, 120px));
+        row-gap: 20px;
+    }
+
+    .jobs__header{
+        margin-bottom: 30px;
+    }
+
+    .jobs{
+        padding: 30px 0;
+    }
+}

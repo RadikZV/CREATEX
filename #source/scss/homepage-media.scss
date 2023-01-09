@@ -1,0 +1,495 @@
+//  1 2 5 0 px =========================
+
+@media (max-width: 1250px) {
+    .enjoy-animation__link::before {
+        left: 0;
+    }
+    .enjoy-animation__link {
+        padding-left: 85px;
+    }
+}
+
+//    1 0 2 3 px =======================================
+
+@media (max-width: 1023.98px) {
+    .big-title{
+        font-size: 48px;
+    }   
+    
+    .link-box-enjoy{
+        margin-top: 40px;
+    }
+
+    .why__list{
+        margin-top: 22px;
+    }
+
+    .why__inner{
+        align-items: center;
+    }
+}
+
+@media (min-width:1024px) {
+    .meet{
+        margin-top: -130px;
+        padding-top: 170px;
+    }
+}
+
+//    8 9 8 px =======================================
+
+@media (max-width: 898.98px) {
+    .big-title{
+        font-size: 36px;
+    }   
+    .enjoy__about{
+        margin-bottom: 100px;
+    }
+
+    .big-number {
+        font-size: 32px;
+    }
+}
+
+//    7 6 8 px =======================================
+
+@media (max-width: 767.98px) {
+    .enjoy{
+        padding-top: 140px;
+    }
+    .enjoy__about{
+        flex-direction: column;
+    }
+
+    .enjoy__about{
+        margin-bottom: 30px;
+    }
+
+    .enjoy__body{
+        margin-bottom: 20px;
+    }
+    
+    .link-box-enjoy {
+        justify-content: center;
+    }
+
+    .enjoy__image {
+        position: relative;
+        max-width: 400px !important;
+    }
+
+    .statistic-enjoy__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        column-gap: 20px;
+        row-gap: 10px;
+    }
+
+    .statistic-enjoy__dot{
+        display: none;
+        
+    }
+
+    .why__image-box{
+        display: none;
+    }
+
+    .why__content{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .why{
+        padding: 50px 0;
+    }
+
+    .title-46px {
+        font-size: 32px;
+    }
+    
+    .subtitle{
+    }
+
+    .why__list{
+        margin: 15px 0;
+    }
+
+
+    .tabs-benefits{
+        margin: 30px 0;
+    }
+
+    .tab-content.active{
+        padding: 0;
+    }
+
+    .tabs-benefits__item.active{
+        
+    }
+
+    .tabs-benefits{
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+    }
+    
+    .benefits__content{
+        display: none;
+    }
+
+    .tabs-benefits__item-text{
+        transition: all 0.3s;
+    }
+
+    .spoiler{
+        display: block;
+    }
+
+    .benefits__content{
+        display: none;
+    }
+
+    .events__item{
+        padding: 20px;
+    }
+
+    .item-events__topic,
+    .item-events__month {
+        font-size: 18px;
+    }
+
+    .item-events__day-number {
+        font-size: 42px;
+    }
+
+    .item-events__row {
+        gap: 15px;
+    }
+
+    .item-events__link{
+        padding: 15px 20px;
+        font-size: 12px;
+    }
+
+    .item-events__date {
+        flex: 0 0 160px;
+    }
+
+    .certificate__inner{
+        flex-direction: column;
+    }
+
+    .certificate__body{
+        margin: 0 auto;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .body-certificate__partners{
+        justify-content: center;
+    }
+
+    .body-certificate__title {
+        margin-bottom: 25px;
+    }
+    .body-certificate__text {
+        margin-bottom: 15px;
+    }
+
+    .certificate__body{
+        margin-bottom: 20px;
+    }
+    .certificate__img-box {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .certificate{
+        padding: 50px 0;
+    }
+
+    .slick-slide {
+        margin: 0 5px;
+    }
+    
+    /* the parent */
+    .slick-list {
+        margin: 0 -5px;
+    }
+}
+
+@media (min-width:768px) {
+    .enjoy__body {
+        margin-right: 20px;
+    }
+    .enjoy__image {
+        position: relative;
+        width: 600px;
+    }
+    .spoiler{
+        display: none;
+    }
+
+    .item-events__date {
+        flex: 0 0 160px;
+    }
+
+    .certificate{
+        padding: 100px 0;
+    }
+
+    
+}
+
+// 6 2 0 ========================
+@media (min-width:620px) {
+    .item-events__row{
+        align-items: center;
+    }
+}
+@media (max-width:619.98px) {
+    .cources-featured__img-link{
+        display: none;
+    }
+
+    .cources-featured__content{
+        padding: 20px;
+    }
+
+    .cources-featured{
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        gap: 10px;
+    }
+
+    .featured {
+        padding: 60px 0;
+    }
+
+    .spoiler__title{
+        font-size: 24px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .spoiler{
+        margin: 30px 0;
+    }
+
+    .spoiler__text{
+        font-size: 12px;
+    }
+
+    .spoiler__row{
+        padding: 0px 10px;
+    }
+
+    .item-events__date{
+        gap: 10px;
+    }
+
+    .item-events__date-info{
+        margin-right: 0px;
+        // text-align: center;
+    }
+
+    .item-events__row{
+        flex-direction: column;
+        
+    }
+
+    .item-events__date{
+        flex: 1 1 auto;
+    }
+
+    .item-events__topic{
+        font-size: 16px;
+    }
+
+    .events__view-all-text {
+        font-size: 24px;
+    }
+
+    .events__view-all{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .events__items{
+        padding: 30px 0;
+    }
+
+    .item-events__month{
+        color: #FF3F3A;
+        font-weight: 700;
+// font-size: 28px;
+// line-height: 150%;
+    }
+
+    .item-events__link{
+        width: 100%;
+    }
+
+    .item-events__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .events__view-all-btn{
+        padding: 15px 30px;
+    }
+
+    .events__container {
+        padding: 30px 10px;
+    }
+
+    .benefits{
+        padding-bottom: 0px;
+    }
+
+    .meet__header{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .meet{
+        padding: 50px 0;
+    }
+}
+
+
+//  4 2 5 px ===================================
+
+@media (max-width: 424.98px) {
+    .enjoy__link-box{
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .link-box-enjoy__about-btn,
+    .link-box-enjoy__courses-btn{
+        // font-size: 12px;
+        padding: 20px 25px;
+        font-size: 14px;
+    }
+
+    .enjoy-animation__link::before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 60px;
+        top: -15px;
+        left: -5px;
+        background-image: url(../img/icons/hover.svg);
+        background-repeat: no-repeat;
+        /* object-fit: cover; */
+        background-size: contain;
+    }
+
+    .enjoy-animation__link {
+        padding-left: 50px;
+    }
+
+    .enjoy-animation {
+        margin-bottom: 40px;
+    }
+    
+
+    .enjoy {
+        padding-top: 110px;
+        padding-bottom: 30px;
+    }
+
+    .statistic-enjoy__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+    .statistic-enjoy__dot{
+        display: inline-block;
+        
+    }
+    .big-number {
+        font-size: 26px;
+    }
+
+    .why{
+        padding: 30px 0;
+    }
+
+    .cources-featured__topic{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .cources-featured__name{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .cources-featured__price{
+        font-size: 14px;
+    }
+
+    .cources-featured__author{
+        font-size: 14px;
+    }
+
+    .body-featured__link{
+        padding: 20px 0px;
+        min-width: 130px;
+        text-align: center;
+    }
+
+    .body-featured{
+        margin-bottom: 30px;
+    }
+
+    .featured {
+        padding: 30px 0;
+    }
+
+    .item-events__link {
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+
+    .events__items {
+        gap: 10px;
+    }
+
+    .body-certificate__title{
+        margin-bottom: 15px;
+    }
+
+    .body-certificate__text{
+        margin-bottom: 5px;
+    }
+
+    .body-certificate__partners {
+        gap: 15px;
+    }
+
+    .certificate{
+        padding: 20px 0;
+    }
+
+    .meet{
+        padding: 30px 0;
+    }
+
+    .meet__header{
+        margin-bottom: 15px;
+    }
+
+    .slider-person-info__name{
+        font-size: 16px;
+    }
+    .slider-person-info__position{
+        font-size: 12px;
+    }
+
+    .slider-person-info {
+        margin-top: 5px;
+    }
+}

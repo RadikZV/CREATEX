@@ -1,0 +1,31 @@
+@media (max-width: 1190px) {
+    .events__filter{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width:767.98px) {
+    
+}
+@media (max-width: 990.98px) {
+    .pagination-events{
+        padding: 10px;
+    }
+    .events{
+        padding-bottom: 20px;
+    }
+    .events__items{
+        padding: 20px 0;
+    }
+}
+
+@media (max-width:574.98px) {
+    .events__filter{
+        margin-top: 30px;
+    }
+
+    .events{
+        padding: 0 10px;
+    }
+}

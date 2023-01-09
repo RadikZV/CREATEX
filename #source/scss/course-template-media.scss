@@ -1,0 +1,387 @@
+@media (max-width: 990.98px) {
+    .discount__inner{
+        padding: 40px;
+    }
+}
+
+
+//  7  6    7  .   9  8   ========================
+
+@media (max-width: 767.98px) {
+    .about-course__inner{
+        flex-direction: column;
+    }
+
+    .about-course__body{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .about-course__card{
+        margin: 0 auto;
+    }
+
+    .course-title__name{
+        font-size: 36px;
+    }
+
+    .about-course{
+        padding: 50px 0;
+    }
+
+
+    .course-author{
+        padding: 50px 0;
+    }
+
+    .course-author__inner{
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    .course-author__img-box{
+        max-width: 350px !important;
+        margin-bottom: 30px;
+    }
+
+
+    .list-steps__text{
+        
+    }
+
+    .steps{
+        padding: 50px 0;
+    }
+
+
+
+
+    .discount__form{
+        row-gap: 15px;
+    }
+    .discount{
+        padding: 50px 0;
+    }
+
+
+
+    .whom,.course-program{
+        padding: 50px 0;
+    }
+
+
+    .course-program__inner{
+        flex-direction: column;
+    }
+    .course-program__content{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .spoiler-program{
+        width: 100% !important;
+    }
+    .course-program__image-box{
+        margin: 0 auto;
+    }
+    .course-program__img{
+        max-height: 400px;
+    }
+
+
+    .course-registration{
+        padding: 70px 0;
+    }
+    .course-registration__inner{
+        flex-direction: column-reverse;
+    }
+    .course-registration__img-box{
+        margin-right: 0;
+        max-width: 450px;
+    }
+    .course-registration__body{
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .about-course__body{
+        max-width: 600px;
+        
+    }
+
+    .about-course__card{
+        min-width: 380px;
+    }
+
+    
+    .spoiler-program{
+        max-width: 600px;
+    }
+}
+
+
+//  6   2   0   px  =========
+
+@media (max-width: 619.98px) {
+    .steps__list{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .list-steps__item{
+        display: flex;
+        &:not(:last-child)::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 26px;
+            height: $step-before-elem-width;
+            // height: 1px;
+            border: 0.5px dashed #D7DADD;
+        }
+    }
+
+    .list-steps__content{
+        margin-left: 15px;
+    }
+
+    .discount__inner{
+        padding: 20px;
+    }
+    .discount__label{
+        margin-bottom: 0;
+    }
+    .discount__header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .discount__title{
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+
+
+
+    .whom__inner{
+        flex-direction: column;
+    }
+
+    .whom__content{
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    .whom__item{
+        font-size: 16px;
+        &::before{
+            top: 5px;
+        }
+    }
+    
+
+    .spoiler-program__item:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    .spoiler-program__title,
+    .spoiler-program__orange-span{
+        font-size: 17px;
+    }
+
+    .spoiler-program__text{
+        font-size: 14px;
+    }
+
+    .spoiler-program__item{
+        padding-left: 30px;
+    }
+
+    .spoiler-program__title{
+        &::before{
+            content: "";
+            position: absolute;
+            background-color: #FF3F3A;
+            width: 18px ;
+            height: 2px;
+            border-radius: 2px;
+            top: 13px;
+            left: -30px;
+            transition: all 0.3s;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            background-color: #FF3F3A;
+            height: 18px ;
+            width: 2px;
+            border-radius: 2px;
+            top: 5px;
+            left: -22px;
+            transition: transform 0.3s ease;
+            transform: scale(1);
+        }
+    }
+    
+
+    .course-registration{
+        padding: 50px 0;
+    }
+
+
+    .check-courses__text{
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 620px) {
+    .list-steps__item{
+        &:not(:last-child)::before{
+            content: "";
+            position: absolute;
+            top: 30px;
+            right: 0;
+            width: $step-before-elem-width;
+            height: 1px;
+            border: 0.5px dashed #D7DADD;
+        }
+    }
+}
+
+
+//// 4   7    5  px   ============================
+
+@media (max-width:474.98px) {
+    .course-title__name{
+        font-size: 30px;
+    }
+    .course-title__inner{
+        padding: 130px 0 50px 0;
+    }
+
+    .about-course{
+        padding: 30px 0;
+    }
+
+    .about-course__title{
+        margin-bottom: 15px;
+    }
+
+    .about-course__subscription{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .about-course__list-title{
+        margin-bottom: 10px;
+    }
+
+    .about-course__item{
+        font-size: 14px;
+    }
+
+    .about-course__card {
+        padding: 20px 30px;
+    }
+
+    .course-card__subtitle{
+        font-size: 12px;
+    }
+
+    .course-card__important-info{
+        font-size: 21px;
+    }
+
+    .course-card-sample-block{
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    .course-card__join-btn{
+        margin-top: 20px;
+    }
+
+    .course-card__subscription{
+        font-size: 14px;
+    }
+
+
+
+    .course-author{
+        padding: 40px 0 30px 0;
+    }
+    .course-author__name {
+        margin-bottom: 5px;
+    }
+
+    .course-author__subtitle{
+        font-size: 14px;
+    }
+
+    .course-author__position{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .course-author__list {
+        margin-bottom: 15px;
+    }
+
+    .course-author__subscription{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+
+    .steps,
+    .check-courses{
+        padding: 30px 0;
+    }
+
+    .steps__header,
+    .course-program__header{
+        margin-bottom: 30px;
+    }
+
+    .check-courses__header{
+        margin-bottom: 20px;
+    }
+
+    .discount,
+    .whom,
+    .course-program,
+    .course-registration{
+        padding: 30px 0;
+    }
+
+    .course-registration__header {
+        margin-bottom: 20px;
+    }
+    .form-registration__input{
+        margin-bottom: 10px;
+    }
+    .form-registration__label {
+        margin-bottom: 5px;
+    }
+    .form-registration__btn{
+        padding: 10px 0;
+    }
+    
+
+
+    .check-courses__subscription{
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .check-courses__text{
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+}

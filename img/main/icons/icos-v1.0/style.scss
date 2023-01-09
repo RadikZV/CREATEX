@@ -1,0 +1,50 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?r2i0mu');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?r2i0mu#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?r2i0mu') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?r2i0mu') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?r2i0mu##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Chat {
+  &:before {
+    content: $icon-Chat; 
+  }
+}
+.icon-Layouts {
+  &:before {
+    content: $icon-Layouts; 
+  }
+}
+.icon-like {
+  &:before {
+    content: $icon-like; 
+  }
+}
+.icon-Star {
+  &:before {
+    content: $icon-Star; 
+  }
+}
+

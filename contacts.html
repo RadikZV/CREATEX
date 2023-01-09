@@ -1,0 +1,404 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Привет SASS(SCSS)!</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/icon-font-demo.css"/>
+
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container container">
+					<div class="header__row">
+						<div class="header__navigation">
+							<a href="./index.html" class="header__logo-link">
+								<img src="img/icons/logo.svg" alt="">
+							</a>
+							<nav class="header__menu menu-header">
+								<ul class="menu-header__list custom-menu-list-768px">
+									<li class="menu-header__item">
+										<a href="./about-us.html" class="menu-header__link menu-link">About Us</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./courses.html" class="menu-header__link menu-link">Courses</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./events.html" class="menu-header__link menu-link">Events</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./blog.html" class="menu-header__link menu-link">Blog</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./contacts.html" class="menu-header__link menu-link menu-link--active">Contacts</a>
+									</li>
+									<a href="#" class="menu-header__btn consult-btn">Get consultation</a>
+									<!-- <button class="menu-header__btn login-btn" type="button"><p class="login-btn__text">Log in / Register</p></button> -->
+								</ul>
+							</nav>
+						</div>
+						<div class="header__registration registration">
+							<a href="#" class="registration__get-btn orange-btn">Get consultation</a>
+							<a href="#popup-login" class="registration__login-btn popup-link"><p class="registration__login-btn-text">Log in / Register</p></a>
+							<div class="header__burger-btn">
+								<span></span>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</header>
+			<main class="main">
+				<section class="main__get-in-touch get-in-touch">
+					<div class="get-in-touch__container container">
+						<div class="get-in-touch__inner">
+							<div class="get-in-touch__main-content">
+								<div class="get-in-touch__contact-info contact-info">
+									<p class="contact-info__subtitle subtitle">Contact info</p>
+									<h2 class="contact-info__title title-46px">Get in touch</h2>
+									<ul class="contact-info__list">
+										<li class="contact-info__item item-contact-info">
+											<p class="item-contact-info__action-name">Talk to us:</p>
+											<a href="mailto:hello@createx.com" class="item-contact-info__action">hello@createx.com</a>
+										</li>
+										<li class="contact-info__item item-contact-info">
+											<p class="item-contact-info__action-name">Call us:</p>
+											<a href="tel:(405) 555-0128" class="item-contact-info__action">(405) 555-0128</a>
+										</li>
+										<li class="contact-info__item item-contact-info">
+											<p class="item-contact-info__action-name">Address:</p>
+											<p class="item-contact-info__action">2464 Royal Ln. Mesa, New Jersey 45463, USA</p>
+										</li>
+									</ul>
+									<div class="contact-info__follow-us-content">
+										<h3 class="contact-info__header">Follow us:</h3>
+										<ul class="contact-info__follow-us-list">
+											<li class="contact-info__follow-us-item">
+												<a href="#" class="contact-info__follow-us-link icon-facebook"></a>
+											</li>
+											<li class="contact-info__follow-us-item">
+												<a href="#" class="contact-info__follow-us-link icon-twitter"></a>
+											</li>
+											<li class="contact-info__follow-us-item">
+												<a href="#" class="contact-info__follow-us-link icon-youtube"></a>
+											</li>
+											<li class="contact-info__follow-us-item">
+												<a href="#" class="contact-info__follow-us-link icon-telegram"></a>
+											</li>
+											<li class="contact-info__follow-us-item">
+												<a href="#" class="contact-info__follow-us-link icon-instagram"></a>
+											</li>
+											<li class="contact-info__follow-us-item">
+												<a href="#" class="contact-info__follow-us-link icon-linked-in"></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="get-in-touch__google-card">
+									<iframe сlass="google-card-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5274.604421605119!2d-74.2226277888298!3d40.102651246844474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c178a78ed5b49b%3A0x71185f8277753d7c!2sMikvah%20Taharah%20Ohel%20Rochel!5e0!3m2!1sru!2sua!4v1664622874456!5m2!1sru!2sua" width="100%" height="416" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
+							</div>
+							<div class="get-in-touch__questions questions">
+								<div class="questions__image-box">
+									<img src="img/contacts/illustration.png" alt="illustration" class="questions__image">
+								</div>
+								<div class="questions__main-content">
+									<p class="questions__subtitle subtitle">Any questions?</p>
+									<h2 class="questions__title title-46px">Drop us a line</h2>
+									<form action="" class="questions__form form-questions">
+										<div class="form-questions__important-info">
+											<div class="form-question__form-item">
+												<label for="" class="form-questions__label label">First Name*</label>
+												<input type="text" class="form-questions__input log-input" required placeholder="Your first name">
+											</div>
+											<div class="form-question__form-item">
+												<label for="" class="form-questions__label label">Last  Name*</label>
+												<input type="text" class="form-questions__input log-input" required placeholder="Your last name">
+											</div>
+											<div class="form-question__form-item">
+												<label for="" class="form-questions__label label">Email*</label>
+												<input type="email" class="form-questions__input log-input" pattern=".+@gmail.com" required placeholder="Your working email">	
+											</div>
+											<div class="form-question__form-item">
+												<label for="" class="form-questions__label label">Phone</label>
+												<input type="tel" class="form-questions__input log-input" pattern="[+380][0-9]{9}" required placeholder="Your phone number">	
+											</div>
+										</div>
+										<label for="" class="form-questions__label label">Message*</label>
+										<textarea class="form-questions__textarea log-input" name="" id="" placeholder="Your message"></textarea>
+										<div class="form-question__submit-box">
+											<label for="" class="form-sign-in__checkbox-label form-question__checkbox-label">
+												<input type="checkbox" class="form-sign-in__checkbox form-question__input">
+												<span class="form-sign-in__checkbox-image form-question__checkbox-image"></span>
+												I agree to receive communications from Createx Online School
+											</label>
+											<button type="submit" href="" class="form-question__btn orange-btn">Send message</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__container container">
+					<div class="footer__row">
+						<div class="footer__about-company about-company">
+							<img src="img/icons/white-bg-logo.svg" alt="Footer logo" class="about-company__logo">
+							<p class="about-company__text-info">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country. </p>
+							<ul class="about-company__socials-list">
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Facebook.svg" alt="facebook" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Twitter.svg" alt="twitter" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/YouTube.svg" alt="youtube" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/telegram.svg" alt="telegram" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Instagram.svg" alt="instagram" class="about-company__socials-img">
+									</a>	
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Linked-In.svg" alt="linkedIn" class="about-company__socials-img">
+									</a>
+								</li> 
+							</ul>
+						</div>
+						<nav class="footer__menu menu-footer">
+							<div class="menu-footer__additionals">
+								<div class="menu-footer__site-map">
+									<h3 class="menu-footer__list-title">site map</h3>
+									<ul class="menu-footer__site-map-list">
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">About Us</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Courses</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Events</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Blog</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Contacts</a>
+										</li>
+									</ul>	
+								</div>
+								<div class="menu-footer__courses">
+									<h3 class="menu-footer__list-title">COURSES</h3>
+									<ul class="menu-footer__courses-list">
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Marketing</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Management</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">HR & Recruting</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Design</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Development</a>
+										</li>
+									</ul>	
+								</div>
+								<div class="menu-footer__contact-us">
+									<h3 class="menu-footer__list-title">CONTACT US</h3>
+									<ul class="menu-footer__contact-us-list contact-us-list">
+										<li class="menu-footer__item contact-us-list__item">
+											<a href="tel:+(405) 555-0128" class="menu-footer__link">(405) 555-0128</a>
+										</li>
+										<li class="menu-footer__item contact-us-list__item">
+											<a href="mailto:hello@createx.com" class="menu-footer__link">hello@createx.com</a>
+										</li>
+									</ul>	
+								</div>
+							</div>
+							<form class="menu-footer__form form-footer">
+								<h3 class="form-footer__title menu-footer__list-title">SIGN UP TO OUR NEWSLETTER</h3>
+								<div class="form-footer__input-block">
+									<input required type="email" placeholder="Email address" pattern="+@gmail.com" class="form-footer__email">
+									<button href="#" class="form-footer__sent-btn">
+										<img src="img/icons/white-arrow.svg" alt="arrow">
+									</button>	
+								</div>
+								<p class="form-footer__agree-text">*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+							</form>
+						</nav>
+					</div>
+				</div>
+				<div class="footer__copyrights copyrights-footer">
+					<div class="copyrights-footer__container container">
+						<p class="copyrights-footer__text">© All rights reserved.Made with <img src="img/icons/Heart.svg" alt="heart"> by Createx Studio </p>
+						<a href="#" class="copyrights-footer__gototop-btn">GO TO TOP</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div class="popup-login popup" id="popup-login">
+			<div class="popup-login__body popup__body">
+				<div class="popup-login__content popup__content">
+					<a href="#" class="popup-login__close-btn close-btn">
+						<img src="img/icons/sign-in/cross.svg" alt="cross">
+					</a>
+					<div class="popup-login__sign-in-body sign-in">
+						<h2 class="sign-in__title popup-title">Sign in</h2>
+						<p class="sign-in__text popup-text">Sign in to your account using email and password provided during registration.</p>
+					</div>
+					<form class="popup-login__form form-sign-in">
+						<label for="" class="form-sign-in__email-label label">Email</label>
+						<input required type="email" class="form-sign-in__email log-input" pattern=".+@gmail.com" reqired placeholder="Your working email">
+						<label for="" class="form-sign-in__password-label label">Password</label>
+						<input required type="password" class="form-sign-in__password log-input" placeholder="Password" minlength="6" maxlength="14">
+						<div class="form-sign-in__check-forgot">
+							<label for="" class="form-sign-in__checkbox-label">
+								<input type="checkbox" class="form-sign-in__checkbox">
+								<span class="form-sign-in__checkbox-image"></span>
+								Keep me signed in
+							</label>
+							<a href="#" class="form-sign-in__forgot-pass">Forgot password?</a>
+						</div>
+						<button class="form-sign-in__button popup-form-button">Sign in</button>
+						<p class="form-sign-in__is-have-acc">Don't have an account? 
+							<a href="#popup-sign-up" class="form-sign-in__sign-up-btn popup-link">Sign up</a>
+						</p>
+					</form>
+					<div class="popup-login__sign-in-with sign-in-with">
+						<p class="sign-in-with__text">Or sign in with</p>
+						<ul class="sign-in-with__list">
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-facebook">
+									<!-- <img src="img/icons/sign-in/Facebook.svg" alt="Facebook" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-google">
+									<!-- <img src="img/icons/sign-in/Google.svg" alt="Google" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-twitter">
+									<!-- <img src="img/icons/sign-in/Twitter.svg" alt="Twitter" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-linked-in">
+									<!-- <img src="img/icons/sign-in/Linked-In.svg" alt="Linked-In" class="sign-in-with__img"> -->
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup-sing-up popup" id="popup-sign-up">
+			<div class="popup-sign-up popup__body">
+				<div class="popup-sign-in__content popup__content">
+					<a href="#" class="popup-sign-in__close-btn close-btn">
+						<img src="img/icons/sign-in/cross.svg" alt="cross">
+					</a>
+					<div class="popup-sing-up__body sign-up-body">
+						<h2 class="sign-up-body__title popup-title">Sign up</h2>
+						<p class="sign-up-body__text popup-text">Registration takes less than a minute but gives you full control over your studying.</p>
+					</div>
+					<form class="popup-sign-up__form form-sign-up">
+						<label for="" class="form-sign-up__full-name-label label">Full Name</label>
+						<input required type="text" class="form-sign-up__full-name-input log-input" placeholder="Your full name">
+						<label for="" class="form-sign-up__email-label label">Email</label>
+						<input required type="email" pattern=".+@gmail.com" class="form-sign-up__email log-input" pattern=".+@gmail.com" placeholder="Your working email">
+						<label for="" class="form-sign-up__password-label label">Password</label>
+						<input required name="passwordInput" type="password" class="form-sign-up__password log-input" placeholder="Password" minlength="6" maxlength="14">
+						<label for="" class="form-sign-up__password-label label">Confirm Password</label>
+						<input required name="passwordConfirmInput" type="password" class="form-sign-up__confirm-password log-input" placeholder="Confirm Password" minlength="6" maxlength="14">
+						<div class="form-sign-up__check-remember-me">
+							<label for="" class="form-sign-in__checkbox-label">
+								<input type="checkbox" class="form-sign-in__checkbox">
+								<span class="form-sign-in__checkbox-image"></span>
+								Remember me
+							</label>	
+						</div>
+						<button class="form-sign-up__button popup-form-button">Sign in</button>
+						<p class="form-sign-up__is-have-acc">Already have an account?
+							<a href="#popup-login" class="form-sign-up__sign-up-btn popup-link">Sign in</a>
+						</p>
+					</form>
+					<div class="popup-login__sign-in-with sign-in-with">
+						<p class="sign-in-with__text">Or sign in with</p>
+						<ul class="sign-in-with__list">
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-facebook">
+									<!-- <img src="img/icons/sign-in/Facebook.svg" alt="Facebook" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-google">
+									<!-- <img src="img/icons/sign-in/Google.svg" alt="Google" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-twitter">
+									<!-- <img src="img/icons/sign-in/Twitter.svg" alt="Twitter" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-linked-in">
+									<!-- <img src="img/icons/sign-in/Linked-In.svg" alt="Linked-In" class="sign-in-with__img"> -->
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+
+		<script src="js/testimonials-slider.js"></script>
+		<script src="js/header-burger.js"></script>
+		<script src="js/popup.js"></script>
+		<script src="js/password-confirm-validation.js"></script>
+		<script src="js/main-tabs.js"></script>
+		<script src="js/main-spoiler.js"></script>
+		<script src="js/back-to-top.js"></script>
+		<script src="js/hide-header.js"></script>
+		<!-- <script src="#source/js/popup.js"></script> -->
+		<script>
+
+			
+
+			
+		</script>
+	</body>
+</html>

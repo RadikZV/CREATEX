@@ -1,0 +1,576 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Привет SASS(SCSS)!</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/icon-font-demo.css"/>
+
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+
+	<template id="news-item-template">
+		<!-- <div class="courses__item item-courses" data-item-category="{{topic}}">
+			<div class="item-courses__image-box">
+				<img src="{{src}}" alt="" class="item-courses__img">
+			</div>
+			<div class="item-courses__body">
+				<span class="item-courses__topic cources-featured__topic">{{topic}}</span>
+				<h2 class="item-courses__name cources-featured__name">
+					<a href="#" class="item-courses__link">{{title}}</a>
+				</h2>
+				<div class="cources-featured__info">
+					<span class="item-courses__price cources-featured__price">{{price}}</span> <span class="item-courses__author cources-featured__author">| by {{author}}</span>
+				</div>
+			</div>
+		</div> -->
+		<div class="news__item item-news" data-option-select="{{option}}" data-select-topic="{{topic}}">
+			<div class="item-news__image-box">
+				<a href="" class="item-news__option" data-option="{{option}}">{{option}}</a>
+				<a href="./blog-item.html" class="item-news__image-link">
+					<img src="{{src}}" alt="" class="item-news__image">
+				</a>
+			</div>
+			<div class="item-news__info">
+				<span class="item-news__bold-span">{{topic}}</span> |
+				<span class="item-news__data-span icon-calendar">{{date}}</span>
+			</div>
+			<div class="item-news__body">
+				<a href="./blog-item.html" class="item-news__article-title">{{article}}</a>
+				<p class="item-news__text">{{text}}</p>
+			</div>
+			<a href="#" class="item-news__link"></a>
+		</div>
+	</template>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container container">
+					<div class="header__row">
+						<div class="header__navigation">
+							<a href="./index.html" class="header__logo-link">
+								<img src="img/icons/logo.svg" alt="">
+							</a>
+							<nav class="header__menu menu-header">
+								<ul class="menu-header__list custom-menu-list-768px">
+									<li class="menu-header__item">
+										<a href="./about-us.html" class="menu-header__link menu-link">About Us</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./courses.html" class="menu-header__link menu-link">Courses</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./events.html" class="menu-header__link menu-link">Events</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./blog.html" class="menu-header__link menu-link menu-link--active">Blog</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./contacts.html" class="menu-header__link menu-link">Contacts</a>
+									</li>
+									<a href="#" class="menu-header__btn consult-btn">Get consultation</a>
+									<!-- <button class="menu-header__btn login-btn" type="button"><p class="login-btn__text">Log in / Register</p></button> -->
+								</ul>
+							</nav>
+						</div>
+						<div class="header__registration registration">
+							<a href="#" class="registration__get-btn orange-btn">Get consultation</a>
+							<a href="#popup-login" class="registration__login-btn popup-link"><p class="registration__login-btn-text">Log in / Register</p></a>
+							<div class="header__burger-btn">
+								<span></span>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</header>
+			<main class="main">
+				<section class="main__news news">
+					<div class="news__container container">
+						<div class="news__header">
+							<p class="news__subtitle subtitle">Our blog</p>
+							<h2 class="news__title title-46px">Createx School Journal</h2>
+						</div>
+						<div class="news__inner">
+							<div class="news__categories">
+								<div class="news__categories-list" id="news__categories-list">
+									<div class="news__category active--category" data-category="All">
+										<p class="news__category-name">All</p>
+									</div>
+									<div class="news__category" data-category="Article">
+										<span class="news__icon-span icon-file"></span>
+										<p class="news__category-name ">Articles</p>
+									</div>
+									<div class="news__category" data-category="Video">
+										<span class="news__icon-span icon-play"></span>
+										<p class="news__category-name">Videos</p>
+									</div>
+									<div class="news__category" data-category="Podcast">
+										<span class="news__icon-span icon-mic"></span>
+										<p class="news__category-name">Podcasts</p>
+									</div>
+								</div>
+								<div class="news__right-content">
+									<div class="filter-news__sort filter-events__sort custom-filter-select is--active">
+										<span class="filter-news__text filter-events__text">Blog category</span>
+										<div class="filter-news__select filter-events__select filter-events custom-filter-select__select-item">
+											<div class="filter-news__header filter-events__header custom-filter-select__header">
+												<span class="filter-news__current filter-events__current custom-filter-select__current" data-select-topic="All themes">All themes</span>
+											</div>
+											<div class="filter-news__body filter-events__body custom-filter-select__body">
+												<div class="filter-news__item filter-events__item custom-filter-select__item" data-select-topic="All themes">All themes</div>
+												<div class="filter-news__item filter-events__item custom-filter-select__item" data-select-topic="Marketing">Marketing</div>
+												<div class="filter-news__item filter-events__item custom-filter-select__item" data-select-topic="Development">Development</div>
+												<div class="filter-news__item filter-events__item custom-filter-select__item" data-select-topic="Design">Design</div>
+												<div class="filter-news__item filter-events__item custom-filter-select__item" data-select-topic="HR & Recruting">HR & Recruting</div>
+												<div class="filter-news__item filter-events__item custom-filter-select__item" data-select-topic="Management">Management</div>
+
+											</div>
+										</div>
+									</div>
+									<form class="news__search-form courses__search-form search-form-min-width-768px">
+										<input class="news__search courses__search" type="search" placeholder="Search course...">
+										<span class="news__span courses__span">
+											<img src="img/icons/search.svg" alt="" class="courses__search-icon">
+										</span>
+									</form>	
+								</div>
+								
+							</div>
+							
+							<div class="news__items" id="news__items"></div>
+							<div class="news__pagination pagination-news">
+								<ul class="pagination-news__list">
+									<li class="pagination-news__item">
+										<a href="" class="pagination-news__num active-pagination-num">1</a>
+									</li>
+									<li class="pagination-news__item">
+										<a href="" class="pagination-news__num">2</a>
+									</li>
+									<li class="pagination-news__item">
+										<a href="" class="pagination-news__num">3</a>
+									</li>
+									<li class="pagination-news__item">
+										<a href="" class="pagination-news__num">4</a>
+									</li>
+								</ul>
+								<a href="#" class="pagination-news__link">
+									<img src="img/icons/pagination-arrow.svg" alt="pagination-arrow" class="pagination-news__arrow-img">
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__subscribe-news subscribe-news">
+					<div class="subscribe-news__container container">
+						<div class="subscribe-news__inner">
+							<div class="subscribe-news__image-box">
+								<img src="img/blog/subscribe.png" alt="">
+							</div>
+							<div class="subscribe-news__content">
+								<h2 class="subscribe-news__title news-subscribe-title">Want to get the best articles weekly?
+									Subscribe to our newsletter!</h2>
+								<form action="" class="subscribe-news__form form-subscribe-news">
+									<div class="form-subscribe-news__main">
+										<input required class="form-subscribe-news__email" type="email" pattern="+@gmail.com" placeholder="Your working email">
+										<button class="form-subscribe-news__sent-btn" >Subscribe</button>
+									</div>
+									<div class="form-sign-in__check-forgot">
+										<label for="" class="form-sign-in__checkbox-label">
+											<input type="checkbox" class="form-sign-in__checkbox">
+											<span class="form-sign-in__checkbox-image"></span>
+											I agree to receive communications from Createx Online School
+										</label>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__container container">
+					<div class="footer__row">
+						<div class="footer__about-company about-company">
+							<img src="img/icons/white-bg-logo.svg" alt="Footer logo" class="about-company__logo">
+							<p class="about-company__text-info">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country. </p>
+							<ul class="about-company__socials-list">
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Facebook.svg" alt="facebook" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Twitter.svg" alt="twitter" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/YouTube.svg" alt="youtube" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/telegram.svg" alt="telegram" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Instagram.svg" alt="instagram" class="about-company__socials-img">
+									</a>	
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Linked-In.svg" alt="linkedIn" class="about-company__socials-img">
+									</a>
+								</li> 
+							</ul>
+						</div>
+						<nav class="footer__menu menu-footer">
+							<div class="menu-footer__additionals">
+								<div class="menu-footer__site-map">
+									<h3 class="menu-footer__list-title">site map</h3>
+									<ul class="menu-footer__site-map-list">
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">About Us</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Courses</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Events</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Blog</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Contacts</a>
+										</li>
+									</ul>	
+								</div>
+								<div class="menu-footer__courses">
+									<h3 class="menu-footer__list-title">COURSES</h3>
+									<ul class="menu-footer__courses-list">
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Marketing</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Management</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">HR & Recruting</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Design</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Development</a>
+										</li>
+									</ul>	
+								</div>
+								<div class="menu-footer__contact-us">
+									<h3 class="menu-footer__list-title">CONTACT US</h3>
+									<ul class="menu-footer__contact-us-list contact-us-list">
+										<li class="menu-footer__item contact-us-list__item">
+											<a href="tel:+(405) 555-0128" class="menu-footer__link">(405) 555-0128</a>
+										</li>
+										<li class="menu-footer__item contact-us-list__item">
+											<a href="mailto:hello@createx.com" class="menu-footer__link">hello@createx.com</a>
+										</li>
+									</ul>	
+								</div>
+							</div>
+							<form class="menu-footer__form form-footer">
+								<h3 class="form-footer__title menu-footer__list-title">SIGN UP TO OUR NEWSLETTER</h3>
+								<div class="form-footer__input-block">
+									<input required type="email" placeholder="Email address" pattern="+@gmail.com" class="form-footer__email">
+									<button href="#" class="form-footer__sent-btn">
+										<img src="img/icons/white-arrow.svg" alt="arrow">
+									</button>	
+								</div>
+								<p class="form-footer__agree-text">*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+							</form>
+						</nav>
+					</div>
+				</div>
+				<div class="footer__copyrights copyrights-footer">
+					<div class="copyrights-footer__container container">
+						<p class="copyrights-footer__text">© All rights reserved.Made with <img src="img/icons/Heart.svg" alt="heart"> by Createx Studio </p>
+						<a href="#" class="copyrights-footer__gototop-btn">GO TO TOP</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div class="popup-login popup" id="popup-login">
+			<div class="popup-login__body popup__body">
+				<div class="popup-login__content popup__content">
+					<a href="#" class="popup-login__close-btn close-btn">
+						<img src="img/icons/sign-in/cross.svg" alt="cross">
+					</a>
+					<div class="popup-login__sign-in-body sign-in">
+						<h2 class="sign-in__title popup-title">Sign in</h2>
+						<p class="sign-in__text popup-text">Sign in to your account using email and password provided during registration.</p>
+					</div>
+					<form class="popup-login__form form-sign-in">
+						<label for="" class="form-sign-in__email-label label">Email</label>
+						<input required type="email" class="form-sign-in__email log-input" pattern=".+@gmail.com" reqired placeholder="Your working email">
+						<label for="" class="form-sign-in__password-label label">Password</label>
+						<input required type="password" class="form-sign-in__password log-input" placeholder="Password" minlength="6" maxlength="14">
+						<div class="form-sign-in__check-forgot">
+							<label for="" class="form-sign-in__checkbox-label">
+								<input type="checkbox" class="form-sign-in__checkbox">
+								<span class="form-sign-in__checkbox-image"></span>
+								Keep me signed in
+							</label>
+							<a href="#" class="form-sign-in__forgot-pass">Forgot password?</a>
+						</div>
+						<button class="form-sign-in__button popup-form-button">Sign in</button>
+						<p class="form-sign-in__is-have-acc">Don't have an account? 
+							<a href="#popup-sign-up" class="form-sign-in__sign-up-btn popup-link">Sign up</a>
+						</p>
+					</form>
+					<div class="popup-login__sign-in-with sign-in-with">
+						<p class="sign-in-with__text">Or sign in with</p>
+						<ul class="sign-in-with__list">
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-facebook">
+									<!-- <img src="img/icons/sign-in/Facebook.svg" alt="Facebook" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-google">
+									<!-- <img src="img/icons/sign-in/Google.svg" alt="Google" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-twitter">
+									<!-- <img src="img/icons/sign-in/Twitter.svg" alt="Twitter" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-linked-in">
+									<!-- <img src="img/icons/sign-in/Linked-In.svg" alt="Linked-In" class="sign-in-with__img"> -->
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup-sing-up popup" id="popup-sign-up">
+			<div class="popup-sign-up popup__body">
+				<div class="popup-sign-in__content popup__content">
+					<a href="#" class="popup-sign-in__close-btn close-btn">
+						<img src="img/icons/sign-in/cross.svg" alt="cross">
+					</a>
+					<div class="popup-sing-up__body sign-up-body">
+						<h2 class="sign-up-body__title popup-title">Sign up</h2>
+						<p class="sign-up-body__text popup-text">Registration takes less than a minute but gives you full control over your studying.</p>
+					</div>
+					<form class="popup-sign-up__form form-sign-up">
+						<label for="" class="form-sign-up__full-name-label label">Full Name</label>
+						<input required type="text" class="form-sign-up__full-name-input log-input" placeholder="Your full name">
+						<label for="" class="form-sign-up__email-label label">Email</label>
+						<input required type="email" pattern=".+@gmail.com" class="form-sign-up__email log-input" pattern=".+@gmail.com" placeholder="Your working email">
+						<label for="" class="form-sign-up__password-label label">Password</label>
+						<input required name="passwordInput" type="password" class="form-sign-up__password log-input" placeholder="Password" minlength="6" maxlength="14">
+						<label for="" class="form-sign-up__password-label label">Confirm Password</label>
+						<input required name="passwordConfirmInput" type="password" class="form-sign-up__confirm-password log-input" placeholder="Confirm Password" minlength="6" maxlength="14">
+						<div class="form-sign-up__check-remember-me">
+							<label for="" class="form-sign-in__checkbox-label">
+								<input type="checkbox" class="form-sign-in__checkbox">
+								<span class="form-sign-in__checkbox-image"></span>
+								Remember me
+							</label>	
+						</div>
+						<button class="form-sign-up__button popup-form-button">Sign in</button>
+						<p class="form-sign-up__is-have-acc">Already have an account?
+							<a href="#popup-login" class="form-sign-up__sign-up-btn popup-link">Sign in</a>
+						</p>
+					</form>
+					<div class="popup-login__sign-in-with sign-in-with">
+						<p class="sign-in-with__text">Or sign in with</p>
+						<ul class="sign-in-with__list">
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-facebook">
+									<!-- <img src="img/icons/sign-in/Facebook.svg" alt="Facebook" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-google">
+									<!-- <img src="img/icons/sign-in/Google.svg" alt="Google" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-twitter">
+									<!-- <img src="img/icons/sign-in/Twitter.svg" alt="Twitter" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-linked-in">
+									<!-- <img src="img/icons/sign-in/Linked-In.svg" alt="Linked-In" class="sign-in-with__img"> -->
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script src="js/mustache.min.js"></script>
+		<script src="js/courses/load-more.js"></script>
+		
+
+		<script src="js/testimonials-slider.js"></script>
+		<script src="js/courses/categories-slider.js"></script>
+		<script src="js/header-burger.js"></script>
+		<script src="js/popup.js"></script>
+		<script src="js/password-confirm-validation.js"></script>
+		<script src="js/main-tabs.js"></script>
+		<script src="js/main-spoiler.js"></script>
+		<script src="js/back-to-top.js"></script>
+		<script src="js/hide-header.js"></script>
+
+		
+		
+		<script>
+
+	let news = {
+		withTime: [
+			{
+				id: 1,
+				option: "Podcast",
+				src: "img/blog/news-images-prev/1.png",
+				topic: "Marketing",
+				date: "September 4, 2020",
+				time: "36 min",
+				article: "What is traffic arbitrage and does it really make money?",
+				text: "Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...",
+			},
+			{
+				id: 3,
+				option: "Video",
+				src: "img/blog/news-images-prev/3.png",
+				topic: "Design",
+				date: "August 8, 2020",
+				time: "40 min",
+				article: "Should you choose a creative profession if you are attracted to creativity?",
+				text: "Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...",
+			},
+			{
+				id: 5,
+				option: "Video",
+				src: "img/blog/news-images-prev/5.png",
+				topic: "Management",
+				date: "August 2, 2020",
+				time: "45 min",
+				article: "What to do and who to talk to if you want to get feedback on the product",
+				text: "Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus. Curabitur nisl tincidunt eros venenatis...",
+			},
+			{
+				id: 6,
+				option: "Podcast",
+				src: "img/blog/news-images-prev/6.png",
+				topic: "Design",
+				date: "July 28, 2020",
+				time: "36 min",
+				article: "What are color profiles and how they work in graphic design",
+				text: "Aliquam vulputate hendrerit quam sollicitudin urna enim viverra gravida. Consectetur urna arcu eleifend...",
+			},
+			{
+				id: 7,
+				option: "Video",
+				src: "img/blog/news-images-prev/7.png",
+				topic: "Management",
+				date: "July 15, 2020",
+				time: "45 min",
+				article: "Startup: how to build a team that will live longer than a year",
+				text: "Nisi, massa ut sit faucibus et diam. Faucibus at malesuada at justo scelerisque in nisi, urna...",
+			},
+		],
+
+		withoutTime: [
+			{
+				id: 2,
+				option: "Article",
+				src: "img/blog/news-images-prev/2.png",
+				topic: "Development",
+				date: "September 1, 2020",
+				time: "",
+				article: "How to choose the first programming language for a beginner",
+				text: "Turpis sed at magna laoreet gravida consequat tortor placerat. Gravida vitae aliquet enim egestas dui...",
+			},
+			{
+				id: 4,
+				option: "Article",
+				src: "img/blog/news-images-prev/4.png",
+				topic: "HR & Recruting",
+				date: "August 3, 2020",
+				time: "",
+				article: "HR statistics: job search,  interviews, hiring and recruiting",
+				text: "Massa, lectus nibh consectetur aliquet nunc risus aenean. Leo hac netus bibendum diam adipiscing aenean nisl. Molestie nullam ante mattis ac sit vitae pellentesque mi etiam. Morbi commodo tempor, massa vivamus. A molestie id semper fermentum pretium...",
+			},
+			{
+				id: 8,
+				option: "Article",
+				src: "img/blog/news-images-prev/8.png",
+				topic: "Marketing",
+				date: "July 9, 2020",
+				time: "",
+				article: "How to get customers to love your business from the start",
+				text: "Malesuada in augue mi feugiat morbi a aliquet enim. Elementum lacus, pellentesque etiam arcu tristique ac...",
+			},
+		]
+	}
+
+// let couseTemplate = document.querySelector("#course-item-template").innerHTML;
+// 		let output = document.querySelector(".courses__items");
+
+// 		for(let i = 0; i < courses.length; i++) {
+// 			const currentArray = courses[i];
+// 			let currentItem;
+
+// 			for(let j = 0; j < currentArray.length; j++) {
+// 				currentItem = currentArray[j];
+// 			}
+
+// 			let renderedHTML = Mustache.render(couseTemplate, currentItem);
+// 			output.insertAdjacentHTML("beforeend", renderedHTML);
+// 		}
+
+// 		let topicSpans = document.querySelectorAll(".item-courses__topic");
+// 		topicSpans.forEach(el => {
+// 			if(el.textContent === "Marketing")
+// 				el.classList.add("marketing-span")
+// 			else if(el.textContent === "Management")
+// 				el.classList.add("management-span")
+// 			else if(el.textContent === "HR & Recruting")
+// 				el.classList.add("hr-span")
+// 			else if(el.textContent === "Design")
+// 				el.classList.add("design-span")
+// 			else if(el.textContent === "Development")
+// 				el.classList.add("development-span")
+// 		});
+		
+		</script>
+		<script src="js/blog/show-news.js"></script>
+		<!-- <script src="js/courses/catagories-sort.js"></script> -->
+
+		<script src="js/events/filter-category.js"></script>
+		<script src="js/blog/categories-sort.js"></script>
+		<script src="js/blog/categories-slider.js"></script>
+	</body>
+</html>

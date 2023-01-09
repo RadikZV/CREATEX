@@ -1,0 +1,534 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Привет SASS(SCSS)!</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/icon-font-demo.css"/>
+
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+
+	<template id="events-item-template">
+		<div class="item-events__row events__item item-events" data-select-kind="{{kind}}">
+			<div class="item-events__date">
+				<p class="item-events__day-number">{{day}}</p>
+				<div class="item-events__date-info">
+					<p class="item-events__month">{{month}} </p>
+					<p class="item-events__time">{{time}}</p>
+				</div>
+			</div>
+			<div class="item-events__content">
+				<a href="./event-template.html" class="item-events__topic">{{topic}}</a>
+				<p class="item-events__kind-of-event">{{kind}}</p>
+			</div>
+			<a href="#" class="item-events__link orange-border-btn">View more</a>
+		</div>
+	</template>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container container">
+					<div class="header__row">
+						<div class="header__navigation">
+							<a href="./index.html" class="header__logo-link">
+								<img src="img/icons/logo.svg" alt="">
+							</a>
+							<nav class="header__menu menu-header">
+								<ul class="menu-header__list custom-menu-list-768px">
+									<li class="menu-header__item">
+										<a href="./about-us.html" class="menu-header__link menu-link">About Us</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./courses.html" class="menu-header__link menu-link">Courses</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./events.html" class="menu-header__link menu-link menu-link--active">Events</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./blog.html" class="menu-header__link menu-link">Blog</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./contacts.html" class="menu-header__link menu-link">Contacts</a>
+									</li>
+									<a href="#" class="menu-header__btn consult-btn">Get consultation</a>
+									<!-- <button class="menu-header__btn login-btn" type="button"><p class="login-btn__text">Log in / Register</p></button> -->
+								</ul>
+							</nav>
+						</div>
+						<div class="header__registration registration">
+							<a href="#" class="registration__get-btn orange-btn">Get consultation</a>
+							<a href="#popup-login" class="registration__login-btn popup-link"><p class="registration__login-btn-text">Log in / Register</p></a>
+							<div class="header__burger-btn">
+								<span></span>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</header>
+			<main class="main">
+
+				<section class="main__events events" id="events">
+					<div class="events__container container">
+						<div class="events__inner">
+							<div class="events__header">
+								<p class="events__subtitle subtitle">Our events</p>
+								<h2 class="events__title title-46px">Lectures, workshops & master-classes</h2>
+							</div>
+							<div class="events__filter">
+								<div class="filter-events__category custom-filter-select is--active">
+									<span class="filter-events__text">Event category</span>
+									<div class="filter-events__select filter-events custom-filter-select__select-item">
+										<div class="filter-events__header custom-filter-select__header">
+											<span class="filter-events__current custom-filter-select__current">all themes</span>
+										</div>
+										<div class="filter-events__body custom-filter-select__body">
+											<div class="filter-events__item filter-events__item-kind custom-filter-select__item" data-select-kind="All themes">all themes</div>
+											<div class="filter-events__item filter-events__item-kind custom-filter-select__item" data-select-kind="Online lecture">online lecture</div>
+											<div class="filter-events__item filter-events__item-kind custom-filter-select__item" data-select-kind="Online workshop">online workshop</div>
+											<div class="filter-events__item filter-events__item-kind custom-filter-select__item" data-select-kind="Online master-class">online master-class</div>
+										</div>
+									</div>
+								</div>
+								<div class="filter-events__sort custom-filter-select is--active">
+									<span class="filter-events__text">Sort by</span>
+									<div class="filter-events__select filter-events custom-filter-select__select-item">
+										<div class="filter-events__header custom-filter-select__header">
+											<span class="filter-events__current custom-filter-select__current">newest</span>
+										</div>
+										<div class="filter-events__body custom-filter-select__body">
+											<div class="filter-events__item custom-filter-select__item">newest</div>
+											<div class="filter-events__item custom-filter-select__item">oldest</div>
+										</div>
+									</div>
+								</div>
+								<div class="filter-events__show custom-filter-select is--active">
+									<span class="filter-events__text">Show</span>
+									<div class="filter-events__select filter-events custom-filter-select__select-item custom-filter-select__select-number">
+										<div class="filter-events__header custom-filter-select__header">
+											<span class="filter-events__current custom-filter-select__current">9</span>
+										</div>
+										<div class="filter-events__body custom-filter-select__body">
+											<div class="filter-events__item custom-filter-select__item">3</div>
+											<div class="filter-events__item custom-filter-select__item">4</div>
+											<div class="filter-events__item custom-filter-select__item">5</div>
+											<div class="filter-events__item custom-filter-select__item">6</div>
+											<div class="filter-events__item custom-filter-select__item">7</div>
+											<div class="filter-events__item custom-filter-select__item">8</div>
+											<div class="filter-events__item custom-filter-select__item">9</div>
+										</div>
+									</div>
+									<span class="filter-events__gray-text">events per page</span>
+								</div>
+								<form class="filter-events__search-form courses__search-form search-form-min-width-768px">
+									<input class="filter-events__search courses__search" type="search" placeholder="Search event...">
+									<span class="filter-events__span courses__span">
+										<img src="img/icons/search.svg" alt="" class="filter-events__search-icon courses__search-icon">
+									</span>
+								</form>
+								<div class="filter-events__look-box">
+									<a href="#" class="filter-events__look-item-active icon-list"></a>
+									<a href="#" class="filter-events__look-item icon-grid"></a>
+								</div>
+								<!-- <div class="filetr-events__show"></div> -->
+							</div>
+							<div class="events__items" id="events__items"></div>
+							<div class="events__pagination pagination-events">
+								<ul class="pagination-events__list">
+									<li class="pagination-events__item">
+										<a href="" class="pagination-events__num active-pagination-num">1</a>
+									</li>
+									<li class="pagination-events__item">
+										<a href="" class="pagination-events__num">2</a>
+									</li>
+									<li class="pagination-events__item">
+										<a href="" class="pagination-events__num">3</a>
+									</li>
+									<li class="pagination-events__item">
+										<a href="" class="pagination-events__num">4</a>
+									</li>
+								</ul>
+								<a href="#" class="pagination-events__link">
+									<img src="img/icons/pagination-arrow.svg" alt="pagination-arrow" class="pagination-events__arrow-img">
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__subcribe subscribe">
+					<div class="subscribe__container container">
+						<p class="subscribe__subtitle">Don’t miss anything</p>
+						<h2 class="subscribe__title title">Subscribe to the Createx School announcements</h2>
+						<form class="subscribe__form form-subscribe">
+							<input required class="form-subscribe__email" type="email" pattern="+@gmail.com" placeholder="Your working email">
+							<button class="form-subscribe__sent-btn" >Subscribe</button>
+						</form>	
+					</div>
+				</section>
+				<div class="main__container container">
+					
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="footer__container container">
+					<div class="footer__row">
+						<div class="footer__about-company about-company">
+							<img src="img/icons/white-bg-logo.svg" alt="Footer logo" class="about-company__logo">
+							<p class="about-company__text-info">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country. </p>
+							<ul class="about-company__socials-list">
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Facebook.svg" alt="facebook" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Twitter.svg" alt="twitter" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/YouTube.svg" alt="youtube" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/telegram.svg" alt="telegram" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Instagram.svg" alt="instagram" class="about-company__socials-img">
+									</a>	
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Linked-In.svg" alt="linkedIn" class="about-company__socials-img">
+									</a>
+								</li> 
+							</ul>
+						</div>
+						<nav class="footer__menu menu-footer">
+							<div class="menu-footer__additionals">
+								<div class="menu-footer__site-map">
+									<h3 class="menu-footer__list-title">site map</h3>
+									<ul class="menu-footer__site-map-list">
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">About Us</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Courses</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Events</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Blog</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Contacts</a>
+										</li>
+									</ul>	
+								</div>
+								<div class="menu-footer__courses">
+									<h3 class="menu-footer__list-title">COURSES</h3>
+									<ul class="menu-footer__courses-list">
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Marketing</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Management</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">HR & Recruting</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Design</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Development</a>
+										</li>
+									</ul>	
+								</div>
+								<div class="menu-footer__contact-us">
+									<h3 class="menu-footer__list-title">CONTACT US</h3>
+									<ul class="menu-footer__contact-us-list contact-us-list">
+										<li class="menu-footer__item contact-us-list__item">
+											<a href="tel:+(405) 555-0128" class="menu-footer__link">(405) 555-0128</a>
+										</li>
+										<li class="menu-footer__item contact-us-list__item">
+											<a href="mailto:hello@createx.com" class="menu-footer__link">hello@createx.com</a>
+										</li>
+									</ul>	
+								</div>
+							</div>
+							<form class="menu-footer__form form-footer">
+								<h3 class="form-footer__title menu-footer__list-title">SIGN UP TO OUR NEWSLETTER</h3>
+								<div class="form-footer__input-block">
+									<input required type="email" placeholder="Email address" pattern="+@gmail.com" class="form-footer__email">
+									<button href="#" class="form-footer__sent-btn">
+										<img src="img/icons/white-arrow.svg" alt="arrow">
+									</button>	
+								</div>
+								<p class="form-footer__agree-text">*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+							</form>
+						</nav>
+					</div>
+				</div>
+				<div class="footer__copyrights copyrights-footer">
+					<div class="copyrights-footer__container container">
+						<p class="copyrights-footer__text">© All rights reserved.Made with <img src="img/icons/Heart.svg" alt="heart"> by Createx Studio </p>
+						<a href="#" class="copyrights-footer__gototop-btn">GO TO TOP</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div class="popup-login popup" id="popup-login">
+			<div class="popup-login__body popup__body">
+				<div class="popup-login__content popup__content">
+					<a href="#" class="popup-login__close-btn close-btn">
+						<img src="img/icons/sign-in/cross.svg" alt="cross">
+					</a>
+					<div class="popup-login__sign-in-body sign-in">
+						<h2 class="sign-in__title popup-title">Sign in</h2>
+						<p class="sign-in__text popup-text">Sign in to your account using email and password provided during registration.</p>
+					</div>
+					<form class="popup-login__form form-sign-in">
+						<label for="" class="form-sign-in__email-label label">Email</label>
+						<input required type="email" class="form-sign-in__email log-input" pattern=".+@gmail.com" reqired placeholder="Your working email">
+						<label for="" class="form-sign-in__password-label label">Password</label>
+						<input required type="password" class="form-sign-in__password log-input" placeholder="Password" minlength="6" maxlength="14">
+						<div class="form-sign-in__check-forgot">
+							<label for="" class="form-sign-in__checkbox-label">
+								<input type="checkbox" class="form-sign-in__checkbox">
+								<span class="form-sign-in__checkbox-image"></span>
+								Keep me signed in
+							</label>
+							<a href="#" class="form-sign-in__forgot-pass">Forgot password?</a>
+						</div>
+						<button class="form-sign-in__button popup-form-button">Sign in</button>
+						<p class="form-sign-in__is-have-acc">Don't have an account? 
+							<a href="#popup-sign-up" class="form-sign-in__sign-up-btn popup-link">Sign up</a>
+						</p>
+					</form>
+					<div class="popup-login__sign-in-with sign-in-with">
+						<p class="sign-in-with__text">Or sign in with</p>
+						<ul class="sign-in-with__list">
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-facebook">
+									<!-- <img src="img/icons/sign-in/Facebook.svg" alt="Facebook" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-google">
+									<!-- <img src="img/icons/sign-in/Google.svg" alt="Google" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-twitter">
+									<!-- <img src="img/icons/sign-in/Twitter.svg" alt="Twitter" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-linked-in">
+									<!-- <img src="img/icons/sign-in/Linked-In.svg" alt="Linked-In" class="sign-in-with__img"> -->
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup-sing-up popup" id="popup-sign-up">
+			<div class="popup-sign-up popup__body">
+				<div class="popup-sign-in__content popup__content">
+					<a href="#" class="popup-sign-in__close-btn close-btn">
+						<img src="img/icons/sign-in/cross.svg" alt="cross">
+					</a>
+					<div class="popup-sing-up__body sign-up-body">
+						<h2 class="sign-up-body__title popup-title">Sign up</h2>
+						<p class="sign-up-body__text popup-text">Registration takes less than a minute but gives you full control over your studying.</p>
+					</div>
+					<form class="popup-sign-up__form form-sign-up">
+						<label for="" class="form-sign-up__full-name-label label">Full Name</label>
+						<input required type="text" class="form-sign-up__full-name-input log-input" placeholder="Your full name">
+						<label for="" class="form-sign-up__email-label label">Email</label>
+						<input required type="email" pattern=".+@gmail.com" class="form-sign-up__email log-input" pattern=".+@gmail.com" placeholder="Your working email">
+						<label for="" class="form-sign-up__password-label label">Password</label>
+						<input required name="passwordInput" type="password" class="form-sign-up__password log-input" placeholder="Password" minlength="6" maxlength="14">
+						<label for="" class="form-sign-up__password-label label">Confirm Password</label>
+						<input required name="passwordConfirmInput" type="password" class="form-sign-up__confirm-password log-input" placeholder="Confirm Password" minlength="6" maxlength="14">
+						<div class="form-sign-up__check-remember-me">
+							<label for="" class="form-sign-in__checkbox-label">
+								<input type="checkbox" class="form-sign-in__checkbox">
+								<span class="form-sign-in__checkbox-image"></span>
+								Remember me
+							</label>	
+						</div>
+						<button class="form-sign-up__button popup-form-button">Sign in</button>
+						<p class="form-sign-up__is-have-acc">Already have an account?
+							<a href="#popup-login" class="form-sign-up__sign-up-btn popup-link">Sign in</a>
+						</p>
+					</form>
+					<div class="popup-login__sign-in-with sign-in-with">
+						<p class="sign-in-with__text">Or sign in with</p>
+						<ul class="sign-in-with__list">
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-facebook">
+									<!-- <img src="img/icons/sign-in/Facebook.svg" alt="Facebook" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-google">
+									<!-- <img src="img/icons/sign-in/Google.svg" alt="Google" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-twitter">
+									<!-- <img src="img/icons/sign-in/Twitter.svg" alt="Twitter" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-linked-in">
+									<!-- <img src="img/icons/sign-in/Linked-In.svg" alt="Linked-In" class="sign-in-with__img"> -->
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script src="js/mustache.min.js"></script>
+		<script src="js/courses/load-more.js"></script>
+		
+
+		<script src="js/testimonials-slider.js"></script>
+		<script src="js/courses/categories-slider.js"></script>
+		<script src="js/header-burger.js"></script>
+		<script src="js/popup.js"></script>
+		<script src="js/password-confirm-validation.js"></script>
+		<script src="js/main-tabs.js"></script>
+		<script src="js/main-spoiler.js"></script>
+		<script src="js/back-to-top.js"></script>
+		<script src="js/hide-header.js"></script>
+
+		<script src="js/events/filter-category.js"></script>
+		<!-- <script src="#source/js/popup.js"></script> -->
+		<script>
+
+
+		// $(".courses__search").after(url('img/icons/search.svg'))
+
+		let events = [
+			{
+				id: 1,
+				day: '05',
+				month: "August",
+				time: "11:00 – 14:00",
+				topic: "Formation of the organizational structure of the company in the face of uncertainty.",
+				kind: "Online master-class",
+			},
+			{
+				id: 2,
+				day: 24,
+				month: "July",
+				time: "11:00 – 12:30",
+				topic: "Building a customer service department. Best Practices.",
+				kind: "Online lecture",
+			},
+			{
+				id: 3,
+				day: 16,
+				month: "July",
+				time: "10:00 – 13:00",
+				topic: "How to apply methods of speculative design in practice. Worldbuilding prototyping.",
+				kind: "Online workshop",
+			},
+			{
+				id: 4,
+				day: 10,
+				month: "July",
+				time: "9:00 – 14:00",
+				topic: "Find and evaluate: search and assessment tools for candidates.",
+				kind: "Online workshop",
+			},
+			{
+				id: 5,
+				day: 27,
+				month: "June",
+				time: "15:00 – 19:00",
+				topic: "Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI.",
+				kind: "Online master-class",
+			},
+			{
+				id: 6,
+				day: 15,
+				month: "June",
+				time: "10:00 – 12:00",
+				topic: "Marketing or growth hacking: main differences and what business needs.",
+				kind: "Online lecture",
+			},
+			{
+				id: 7,
+				day: '02',
+				month: "June",
+				time: "11:00 – 13:00",
+				topic: "How to brief a client and present your design to approve it from the first show.",
+				kind: "Online lecture",
+			},
+			{
+				id: 8,
+				day: 29,
+				month: "May",
+				time: "11:00 – 12:00",
+				topic: "Who is a project manager and do I want to be PM?",
+				kind: "Online lecture",
+			},
+			{
+				id: 9,
+				day: 18,
+				month: "May",
+				time: "10:00 – 12:00",
+				topic: "The company's business page as an additional tool to support the announcement of vacancies.",
+				kind: "Onine lecture",
+			},
+		]
+			
+// 		let courses = [
+// 			{
+// 				id: 1,
+// 				src: "img/main/courses/courses-page/1.png",
+// 				topic: "Marketing",
+// 				title: "The Ultimate Google Ads Training Course",
+// 				price: "$100",
+// 				author: "Jerome Bell"
+// 			},
+// 			{
+// 				id: 2,
+// 				src: "img/main/courses/courses-page/2.png",
+// 				topic: "Management",
+// 				title: "Product Management Fundamentals",
+// 				price: "$480",
+// 				author: "Marvin McKinney"
+// 			},
+
+
+		</script>
+		<script src="js/events/events-show.js"></script>
+		<!-- <script src="js/courses/catagories-sort.js"></script> -->
+	</body>
+</html>

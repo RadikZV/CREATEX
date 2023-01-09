@@ -1,0 +1,795 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Привет SASS(SCSS)!</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/icon-font-demo.css"/>
+
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container container">
+					<div class="header__row">
+						<div class="header__navigation">
+							<a href="./index.html" class="header__logo-link">
+								<img src="img/icons/logo.svg" alt="">
+							</a>
+							<nav class="header__menu menu-header">
+								<ul class="menu-header__list custom-menu-list-768px">
+									<li class="menu-header__item">
+										<a href="./about-us.html" class="menu-header__link menu-link">About Us</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./courses.html" class="menu-header__link menu-link menu-link--active">Courses</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./events.html" class="menu-header__link menu-link">Events</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./blog.html" class="menu-header__link menu-link">Blog</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./contacts.html" class="menu-header__link menu-link">Contacts</a>
+									</li>
+									<a href="#" class="menu-header__btn consult-btn">Get consultation</a>
+									<!-- <button class="menu-header__btn login-btn" type="button"><p class="login-btn__text">Log in / Register</p></button> -->
+								</ul>
+							</nav>
+						</div>
+						<div class="header__registration registration">
+							<a href="#" class="registration__get-btn orange-btn">Get consultation</a>
+							<a href="#popup-login" class="registration__login-btn popup-link"><p class="registration__login-btn-text">Log in / Register</p></a>
+							<div class="header__burger-btn">
+								<span></span>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</header>
+			<main class="main">
+
+
+				<section class="main__course-title course-title">
+					<div class="course-title__container container">
+						<div class="course-title__inner">
+							<p class="course-title__subtitle">course</p>
+							<h2 class="course-title__name">User Experience. Principles of Human-Centered Design</h2>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__about-course about-course">
+					<div class="about-course__container container">
+						<div class="about-course__inner">
+							<div class="about-course__body">
+								<h2 class="about-course__title title-46px">About the course</h2>
+								<p class="about-course__subscription">Bibendum vulputate adipiscing venenatis at est, a eu tincidunt. Leo aenean congue in sagittis, felis maecenas amet varius at. Pellentesque euismod in faucibus at elementum. Tellus maecenas libero est tempus sit cras at malesuada diam. Consequat senectus dictumst non hac dignissim montes, pretium, egestas molestie. Sed magna aliquet ornare nibh vel lectus diam eget pretium. Lorem risus nunc tincidunt tortor, mi nulla pellentesque</p>
+								<h4 class="about-course__list-title">You will learn:</h4>
+								<ul class="about-course__list">
+									<li class="about-course__item">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+									<li class="about-course__item">Vulputate placerat amet pulvinar lorem nisl.</li>
+									<li class="about-course__item">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+									<li class="about-course__item">Etiam duis lobortis in fames ultrices commodo nibh.</li>
+									<li class="about-course__item">Fringilla in nec risus congue venenatis pretium posuere nec.</li>
+									<li class="about-course__item">Cursus eu pretium, vulputate tempus quam massa sed at.</li>
+								</ul>
+							</div>
+							<div class="about-course__card course-card">
+								<div class="course-card__body">
+									<div class="course-card__dates course-card-sample-block">
+										<p class="course-card__subtitle">Dates</p>
+										<p class="course-card__important-info">Sept 7 – Nov 2</p>
+										<p class="course-card__subscription">Metus turpis sit lorem lacus, in elit tellus lacus.</p>
+									</div>
+									<div class="course-card__duration course-card-sample-block">
+										<p class="course-card__subtitle">Duration</p>
+										<p class="course-card__important-info">2 months – 8 lessons</p>
+										<p class="course-card__subscription">Rhoncus pellentesque auctor auctor orci vulputate faucibus quis ut.</p>
+									</div>
+									<div class="course-card__price course-card-sample-block">
+										<p class="course-card__subtitle">Price</p>
+										<p class="course-card__important-info">$120 per month</p>
+										<p class="course-card__subscription">Nulla sem adipiscing adipiscing felis fringilla. Adipiscing mauris quam ac elit tristique dis.</p>
+									</div>
+								</div>
+								<a href="#" class="course-card__join-btn orange-btn">Join the course</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__course-author course-author">
+					<div class="course-author__container container">
+						<div class="course-author__inner">
+							<div class="course-author__img-box">
+								<img src="img/main/course/by Cody Fisher/fisher.png" alt="author" class="course-author__image">
+							</div>
+							<div class="course-author__content">
+								<p class="course-author__subtitle subtitle">Course curator</p>
+								<h3 class="course-author__name title-46px">Cody Fisher</h3>
+								<p class="course-author__position">Senior UX designer in IT Product Company</p>
+								<ul class="course-author__list">
+									<li class="course-author__item">4.9 rate</li>
+									<li class="course-author__item">4 courses</li>
+									<li class="course-author__item">350 students</li>
+								</ul>
+								<p class="course-author__subscription">Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam. </p>
+								<ul class="course-author__socials-list">
+									<li class="course-author__socials-item">
+										<a href="" class="course-author__socials-link icon-facebook"></a>
+									</li>
+									<li class="course-author__socials-item">
+										<a href="" class="course-author__socials-link icon-behance"></a>
+									</li>
+									<li class="course-author__socials-item">
+										<a href="" class="course-author__socials-link icon-twitter"></a>
+									</li>
+									<li class="course-author__socials-item">
+										<a href="" class="course-author__socials-link icon-linked-in"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__steps steps">
+					<div class="steps__container container">
+						<div class="steps__inner">
+							<div class="steps__header">
+								<p class="steps__subtitle subtitle">Main steps</p>
+								<h2 class="steps__title title-46px">Online learning process</h2>
+							</div>
+							<div class="steps__content">
+								<ul class="steps__list list-steps">
+									<li class="list-steps__item">
+										<span class="list-steps__number">01</span>
+										<div class="list-steps__content">	
+											<h4 class="list-steps__step-title">Watching online video lectures</h4>
+											<p class="list-steps__text">Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.</p>
+										</div>
+									</li>
+									<li class="list-steps__item">
+										<span class="list-steps__number">02</span>
+										<div class="list-steps__content">	
+											<h4 class="list-steps__step-title">Passing test</h4>
+											<p class="list-steps__text">Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim ad tempor est ea.</p>
+										</div>
+									</li>
+									<li class="list-steps__item">
+										<span class="list-steps__number">03</span>
+										<div class="list-steps__content">	
+											<h4 class="list-steps__step-title">Curator’s feedback</h4>
+											<p class="list-steps__text">Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt.</p>
+										</div>
+									</li>
+									<li class="list-steps__item">
+										<span class="list-steps__number">04</span>
+										<div class="list-steps__content">	
+											<h4 class="list-steps__step-title">Corrections if needed</h4>
+											<p class="list-steps__text">Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__discount discount">
+					<div class="discount__container container">
+						<div class="discount__inner">
+							<div class="discount__header">
+								<h2 class="discount__title">20% discount for early birds!</h2>
+								<div class="discount__timer timer-discount">
+									<div class="timer-discount__items">
+									  <div class="timer-discount__item timer-discount__days">00</div>
+									  <div class="timer-discount__item timer-discount__hours">00</div>
+									  <div class="timer-discount__item timer-discount__minutes">00</div>
+									  <div class="timer-discount__item timer-discount__seconds">00</div>
+									</div>
+								  </div>
+							</div>
+							<form action="#" class="discount__form">
+								<div class="discount__full-name-box discount-input-box">
+									<label for="" class="discount__label">Full name</label>
+									<input type="text" class="discount__full-name-input" placeholder="Your full name">
+								</div>
+								<div class="discount__email-box discount-input-box">
+									<label for="" class="discount__label">Email</label>
+									<input type="email" class="discount__email-input" placeholder="Your working email">
+								</div>
+								<div class="discount__phone-box discount-input-box">
+									<label for="" class="discount__label">Phone</label>
+									<input type="tel" class="discount__phone-input" placeholder="Your phone number">
+								</div>
+								<button class="discount__btn orange-btn">Join the course</button>
+							</form>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__whom whom">
+					<div class="whom__container container">
+						<div class="whom__inner">
+							<div class="whom__content">
+								<p class="whom__subtitle subtitle">For whom?</p>
+								<h2 class="whom__title title-46px">Who will benefit from the course:</h2>
+							</div>
+							<ul class="whom__list">
+								<li class="whom__item">Specialists with more than 1 year of active work experience</li>
+								<li class="whom__item">Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces</li>
+								<li class="whom__item">Professional designers who want to feel more confident in UX</li>
+								<li class="whom__item">Specialists who would like to structure their knowledge, fill in the gaps</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__course-program course-program">
+					<div class="course-program__container container">
+						<div class="course-program__inner">
+							<div class="course-program__content">
+								<div class="course-program__header">
+									<p class="course-program__subtitle subtitle">Course program</p>
+									<h2 class="course-program__title title-46px">What will you learn</h2>
+								</div>
+								<div class="course-program__spoiler spoiler-program one-spoiler-opened">
+									<div class="spoiler-program__item">
+										<h2 class="spoiler-program__title">
+											<span class="spoiler-program__orange-span">Lesson 1.</span> Aliquet lectus urna viverra in odio.
+										</h2>
+										<p class="spoiler-program__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+									</div>
+									<div class="spoiler-program__item">
+										<h2 class="spoiler-program__title">
+											<span class="spoiler-program__orange-span">Lesson 2.</span> Orci commodo, viverra orci mollis ut euismod.
+										</h2>
+										<p class="spoiler-program__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+									</div>
+									<div class="spoiler-program__item">
+										<h2 class="spoiler-program__title">
+											<span class="spoiler-program__orange-span">Lesson 3.</span> Sagittis vitae facilisi rutrum amet mauris quisque vel.
+										</h2>
+										<p class="spoiler-program__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+									</div>
+									<div class="spoiler-program__item">
+										<h2 class="spoiler-program__title">
+											<span class="spoiler-program__orange-span">Lesson 4.</span> In id dolor quis nunc, urna hendrerit pharetra.
+										</h2>
+										<p class="spoiler-program__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+									</div>
+									<div class="spoiler-program__item">
+										<h2 class="spoiler-program__title">
+											<span class="spoiler-program__orange-span">Lesson 5.</span> Est, ut tempus id rutrum facilisi.
+										</h2>
+										<p class="spoiler-program__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+									</div>
+									<div class="spoiler-program__item">
+										<h2 class="spoiler-program__title">
+											<span class="spoiler-program__orange-span">Lesson 6.</span> Amet nec in pellentesque.
+										</h2>
+										<p class="spoiler-program__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+									</div>
+									<div class="spoiler-program__item">
+										<h2 class="spoiler-program__title">
+											<span class="spoiler-program__orange-span">Lesson 7.</span> Massa vel arcu mauris, id vel rhoncus mattis quis.
+										</h2>
+										<p class="spoiler-program__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+									</div>
+									<div class="spoiler-program__item">
+										<h2 class="spoiler-program__title">
+											<span class="spoiler-program__orange-span">Lesson 8.</span> Neque, cursus sapien nullam id.
+										</h2>
+										<p class="spoiler-program__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+									</div>
+								</div>
+							</div>
+							<div class="course-program__image-box">
+								<img src="img/courses-template/online-lesson.png" alt="online-lesson" class="course-program__img">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__testimonials testimonials">
+					<div class="testimonials__container container">
+						<div class="testimonials__inner">
+							<div class="testimonials__header">
+								<p class="testimonials__subtitle subtitle">TESTIMONIALS</p>
+								<h2 class="testimonials__title title-46px">What our students say</h2>
+							</div>
+							<div class="testimonials__content">
+								<div class="testimonials__slider slider-testimonials">
+									<div class="slider-testimonials__item item-testimonials-slider">
+										<div class="item-testimonials-slider__content">
+											<p class="item-testimonials-slider__review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+											<div class="item-testimonials-slider__reviewer">
+												<div class="item-testimonials-slider__reviewer-image-box">
+													<img src="img/main/testimonials/reviewer-img.jpg" alt="reviewer-img" class="item-testimonials-slider__reviewer-image">
+												</div>
+												<div class="item-testimonials-slider__reviewer-info">
+													<p class="item-testimonials-slider__reviewer-name">Eleanor Pena</p>
+													<p class="item-testimonials-slider__reviewer-position">Position, Course</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slider-testimonials__item item-testimonials-slider">
+										<div class="item-testimonials-slider__content">
+											<p class="item-testimonials-slider__review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+											<div class="item-testimonials-slider__reviewer">
+												<div class="item-testimonials-slider__reviewer-image-box">
+													<img src="img/main/testimonials/reviewer-img.jpg" alt="reviewer-img" class="item-testimonials-slider__reviewer-image">
+												</div>
+												<div class="item-testimonials-slider__reviewer-info">
+													<p class="item-testimonials-slider__reviewer-name">Eleanor Pena</p>
+													<p class="item-testimonials-slider__reviewer-position">Position, Course</p>
+												</div>
+											</div>	
+										</div>
+									</div>
+									<div class="slider-testimonials__item item-testimonials-slider">
+										<div class="item-testimonials-slider__content">
+											<p class="item-testimonials-slider__review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+											<div class="item-testimonials-slider__reviewer">
+												<div class="item-testimonials-slider__reviewer-image-box">
+													<img src="img/main/testimonials/reviewer-img.jpg" alt="reviewer-img" class="item-testimonials-slider__reviewer-image">
+												</div>
+												<div class="item-testimonials-slider__reviewer-info">
+													<p class="item-testimonials-slider__reviewer-name">Eleanor Pena</p>
+													<p class="item-testimonials-slider__reviewer-position">Position, Course</p>
+												</div>
+											</div>	
+										</div>
+										
+									</div>
+									<div class="slider-testimonials__item item-testimonials-slider">
+										<div class="item-testimonials-slider__content">
+											<p class="item-testimonials-slider__review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+											<div class="item-testimonials-slider__reviewer">
+												<div class="item-testimonials-slider__reviewer-image-box">
+													<img src="img/main/testimonials/reviewer-img.jpg" alt="reviewer-img" class="item-testimonials-slider__reviewer-image">
+												</div>
+												<div class="item-testimonials-slider__reviewer-info">
+													<p class="item-testimonials-slider__reviewer-name">Eleanor Pena</p>
+													<p class="item-testimonials-slider__reviewer-position">Position, Course</p>
+												</div>
+											</div>	
+										</div>
+										
+									</div>
+									<div class="slider-testimonials__item item-testimonials-slider">
+										<div class="item-testimonials-slider__content">
+											<p class="item-testimonials-slider__review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+											<div class="item-testimonials-slider__reviewer">
+												<div class="item-testimonials-slider__reviewer-image-box">
+													<img src="img/main/testimonials/reviewer-img.jpg" alt="reviewer-img" class="item-testimonials-slider__reviewer-image">
+												</div>
+												<div class="item-testimonials-slider__reviewer-info">
+													<p class="item-testimonials-slider__reviewer-name">Eleanor Pena</p>
+													<p class="item-testimonials-slider__reviewer-position">Position, Course</p>
+												</div>
+											</div>	
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__registration course-registration">
+					<div class="course-registration__container container">
+						<div class="course-registration__inner">
+							<div class="course-registration__img-box">
+								<img src="img/courses-template/with-mentor.png" alt="mentor" class="course-registration__image">
+							</div>
+							<div class="course-registration__body">
+								<div class="course-registration__header">
+									<p class="course-registration__subtitle subtitle">Leave a request now and get 20% off!</p>
+									<h2 class="course-registration__title title-46px">Register for the course</h2>
+								</div>
+								<form action="#" class="course-registration__form form-registration">
+									<label for="" class="form-registration__label">Full Name</label>
+									<input required type="text" class="form-registration__input" placeholder="Your full name">
+									<label for="" class="form-registration__label">Email</label>
+									<input required type="email" pattern=".+@gmail.com" class="form-registration__input" placeholder="Your working email">
+									<label for="" class="form-registration__label">Phone</label>
+									<input required type="tel" class="form-registration__input" pattern="[+380][0-9]{9}" placeholder="Your phone number">
+									<button class="form-registration__btn orange-btn">Join the course</button>
+								</form>
+							</div>
+							
+						</div>
+					</div>
+				</section>
+
+				<section class="main__check-courses check-courses check-courses__slider-box">
+					<div class="check-courses__container container">
+						<div class="check-courses__inner">
+							<div class="check-courses__header">
+								<p class="check-courses__subtitle subtitle">Check other courses</p>
+								<h2 class="check-courses__title title-46px">You may also like</h2>
+							</div>
+							<div class="check-courses__content">
+								<div class="check-courses__slider slider-check-courses">
+									<div class="slider-check-courses__item cources-featured__item">
+										<a href="#" class="slider-check-courses__img-link cources-featured__img-link">
+											<img src="img/main/courses/1.jpg" alt="author" class="slider-check-courses__image cources-featured__image">
+										</a> 
+										<div class="slider-check-courses__content cources-featured__content">
+											<span class="slider-check-courses__topic cources-featured__topic marketing-span">Marketing</span>
+											<a href="#" class="slider-check-courses__topic-link cources-featured__topic-link"><h4 class="slider-check-courses__name cources-featured__name">The Ultimate Google Ads Training Course</h4></a>
+											<div class="slider-check-courses__info cources-featured__info">
+												<span class="slider-check-courses__price cources-featured__price">$100</span> <span class="slider-check-courses__author cources-featured__author">| by Jerome Bell</span>
+											</div>
+										</div>
+									</div>
+									<div class="slider-check-courses__item cources-featured__item">
+										<a href="#" class="slider-check-courses__img-link cources-featured__img-link">
+											<img src="img/main/courses/2.jpg" alt="author" class="slider-check-courses__image cources-featured__image">
+										</a> 
+										<div class="slider-check-courses__content cources-featured__content">
+											<span class="slider-check-courses__topic cources-featured__topic management-span">Management</span>
+											<a href="#" class="slider-check-courses__topic-link cources-featured__topic-link"><h4 class="slider-check-courses__name cources-featured__name">Product Management Fundamentals</h4></a>
+											<div class="slider-check-courses__info cources-featured__info">
+												<span class="slider-check-courses__price cources-featured__price">$480</span> <span class="slider-check-courses__author cources-featured__author">| by Marvin McKinney</span>
+											</div>
+										</div>
+									</div>
+									<div class="slider-check-courses__item cources-featured__item">
+										<a href="#" class="slider-check-courses__img-link cources-featured__img-link">
+											<img src="img/main/courses/3.jpg" alt="author" class="slider-check-courses__image cources-featured__image">
+										</a> 
+										<div class="slider-check-courses__content cources-featured__content">
+											<span class="slider-check-courses__topic cources-featured__topic hr-span">HR & Recruting</span>
+											<a href="#" class="slider-check-courses__topic-link cources-featured__topic-link"><h4 class="slider-check-courses__name cources-featured__name">HR  Management and Analytics</h4></a>
+											<div class="slider-check-courses__info cources-featured__info">
+												<span class="slider-check-courses__price cources-featured__price">$200</span> <span class="slider-check-courses__author cources-featured__author">| by Leslie Alexander Li</span>
+											</div>
+										</div>
+									</div>
+									<div class="slider-check-courses__item cources-featured__item">
+										<a href="#" class="slider-check-courses__img-link cources-featured__img-link">
+											<img src="img/main/courses/4.jpg" alt="author" class="slider-check-courses__image cources-featured__image">
+										</a> 
+										<div class="slider-check-courses__content cources-featured__content">
+											<span class="slider-check-courses__topic cources-featured__topic marketing-span">Marketing</span>
+											<a href="#" class="slider-check-courses__topic-link cources-featured__topic-link"><h4 class="slider-check-courses__name cources-featured__name">Brand Management & PR Communications</h4></a> 
+											<div class="slider-check-courses__info cources-featured__info">
+												<span class="slider-check-courses__price cources-featured__price">$530</span> <span class="slider-check-courses__author cources-featured__author">| by Kristin Watson</span>
+											</div>
+										</div>
+									</div>
+									<div class="slider-check-courses__item cources-featured__item">
+										<a href="#" class="slider-check-courses__img-link cources-featured__img-link">
+											<img src="img/main/courses/5.jpg" alt="author" class="slider-check-courses__image cources-featured__image">
+										</a> 
+										<div class="slider-check-courses__content cources-featured__content">
+											<span class="slider-check-courses__topic cources-featured__topic management-span">Management</span>
+											<a href="#" class="slider-check-courses__topic-link cources-featured__topic-link"><h4 class="slider-check-courses__name cources-featured__name">Business Development Management</h4></a> 
+											<div class="slider-check-courses__info cources-featured__info">
+												<span class="slider-check-courses__price cources-featured__price">$400</span> <span class="slider-check-courses__author cources-featured__author">| by Dianne Russell</span>
+											</div>
+										</div>
+									</div>
+									<div class="slider-check-courses__item cources-featured__item">
+										<a href="#" class="slider-check-courses__img-link cources-featured__img-link">
+											<img src="img/main/courses/6.jpg" alt="author" class="slider-check-courses__image cources-featured__image">
+										</a> 
+										<div class="slider-check-courses__content cources-featured__content">
+											<span class="slider-check-courses__topic cources-featured__topic design-span">Design</span>
+											<a href="#" class="slider-check-courses__topic-link cources-featured__topic-link"><h4 class="slider-check-courses__name cources-featured__name">Graphic Design Basic</h4></a> 
+											<div class="slider-check-courses__info cources-featured__info">
+												<span class="slider-check-courses__price cources-featured__price">$500</span> <span class="slider-check-courses__author cources-featured__author">| by Guy Hawkins</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="check-courses__subscription">
+								<p class="check-courses__text">Do you want more courses?</p>
+								<a href="#" class="check-courses__link orange-btn">View all courses</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<div class="main__container container">
+					
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="footer__container container">
+					<div class="footer__row">
+						<div class="footer__about-company about-company">
+							<img src="img/icons/white-bg-logo.svg" alt="Footer logo" class="about-company__logo">
+							<p class="about-company__text-info">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country. </p>
+							<ul class="about-company__socials-list">
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Facebook.svg" alt="facebook" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Twitter.svg" alt="twitter" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/YouTube.svg" alt="youtube" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/telegram.svg" alt="telegram" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Instagram.svg" alt="instagram" class="about-company__socials-img">
+									</a>	
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Linked-In.svg" alt="linkedIn" class="about-company__socials-img">
+									</a>
+								</li> 
+							</ul>
+						</div>
+						<nav class="footer__menu menu-footer">
+							<div class="menu-footer__additionals">
+								<div class="menu-footer__site-map">
+									<h3 class="menu-footer__list-title">site map</h3>
+									<ul class="menu-footer__site-map-list">
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">About Us</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Courses</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Events</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Blog</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Contacts</a>
+										</li>
+									</ul>	
+								</div>
+								<div class="menu-footer__courses">
+									<h3 class="menu-footer__list-title">COURSES</h3>
+									<ul class="menu-footer__courses-list">
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Marketing</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Management</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">HR & Recruting</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Design</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Development</a>
+										</li>
+									</ul>	
+								</div>
+								<div class="menu-footer__contact-us">
+									<h3 class="menu-footer__list-title">CONTACT US</h3>
+									<ul class="menu-footer__contact-us-list contact-us-list">
+										<li class="menu-footer__item contact-us-list__item">
+											<a href="tel:+(405) 555-0128" class="menu-footer__link">(405) 555-0128</a>
+										</li>
+										<li class="menu-footer__item contact-us-list__item">
+											<a href="mailto:hello@createx.com" class="menu-footer__link">hello@createx.com</a>
+										</li>
+									</ul>	
+								</div>
+							</div>
+							<form class="menu-footer__form form-footer">
+								<h3 class="form-footer__title menu-footer__list-title">SIGN UP TO OUR NEWSLETTER</h3>
+								<div class="form-footer__input-block">
+									<input required type="email" placeholder="Email address" pattern="+@gmail.com" class="form-footer__email">
+									<button href="#" class="form-footer__sent-btn">
+										<img src="img/icons/white-arrow.svg" alt="arrow">
+									</button>	
+								</div>
+								<p class="form-footer__agree-text">*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+							</form>
+						</nav>
+					</div>
+				</div>
+				<div class="footer__copyrights copyrights-footer">
+					<div class="copyrights-footer__container container">
+						<p class="copyrights-footer__text">© All rights reserved.Made with <img src="img/icons/Heart.svg" alt="heart"> by Createx Studio </p>
+						<a href="#" class="copyrights-footer__gototop-btn">GO TO TOP</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div class="popup-login popup" id="popup-login">
+			<div class="popup-login__body popup__body">
+				<div class="popup-login__content popup__content">
+					<a href="#" class="popup-login__close-btn close-btn">
+						<img src="img/icons/sign-in/cross.svg" alt="cross">
+					</a>
+					<div class="popup-login__sign-in-body sign-in">
+						<h2 class="sign-in__title popup-title">Sign in</h2>
+						<p class="sign-in__text popup-text">Sign in to your account using email and password provided during registration.</p>
+					</div>
+					<form class="popup-login__form form-sign-in">
+						<label for="" class="form-sign-in__email-label label">Email</label>
+						<input required type="email" class="form-sign-in__email log-input" pattern=".+@gmail.com" reqired placeholder="Your working email">
+						<label for="" class="form-sign-in__password-label label">Password</label>
+						<input required type="password" class="form-sign-in__password log-input" placeholder="Password" minlength="6" maxlength="14">
+						<div class="form-sign-in__check-forgot">
+							<label for="" class="form-sign-in__checkbox-label">
+								<input type="checkbox" class="form-sign-in__checkbox">
+								<span class="form-sign-in__checkbox-image"></span>
+								Keep me signed in
+							</label>
+							<a href="#" class="form-sign-in__forgot-pass">Forgot password?</a>
+						</div>
+						<button class="form-sign-in__button popup-form-button">Sign in</button>
+						<p class="form-sign-in__is-have-acc">Don't have an account? 
+							<a href="#popup-sign-up" class="form-sign-in__sign-up-btn popup-link">Sign up</a>
+						</p>
+					</form>
+					<div class="popup-login__sign-in-with sign-in-with">
+						<p class="sign-in-with__text">Or sign in with</p>
+						<ul class="sign-in-with__list">
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-facebook">
+									<!-- <img src="img/icons/sign-in/Facebook.svg" alt="Facebook" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-google">
+									<!-- <img src="img/icons/sign-in/Google.svg" alt="Google" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-twitter">
+									<!-- <img src="img/icons/sign-in/Twitter.svg" alt="Twitter" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-linked-in">
+									<!-- <img src="img/icons/sign-in/Linked-In.svg" alt="Linked-In" class="sign-in-with__img"> -->
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup-sing-up popup" id="popup-sign-up">
+			<div class="popup-sign-up popup__body">
+				<div class="popup-sign-in__content popup__content">
+					<a href="#" class="popup-sign-in__close-btn close-btn">
+						<img src="img/icons/sign-in/cross.svg" alt="cross">
+					</a>
+					<div class="popup-sing-up__body sign-up-body">
+						<h2 class="sign-up-body__title popup-title">Sign up</h2>
+						<p class="sign-up-body__text popup-text">Registration takes less than a minute but gives you full control over your studying.</p>
+					</div>
+					<form class="popup-sign-up__form form-sign-up">
+						<label for="" class="form-sign-up__full-name-label label">Full Name</label>
+						<input required type="text" class="form-sign-up__full-name-input log-input" placeholder="Your full name">
+						<label for="" class="form-sign-up__email-label label">Email</label>
+						<input required type="email" pattern=".+@gmail.com" class="form-sign-up__email log-input" pattern=".+@gmail.com" placeholder="Your working email">
+						<label for="" class="form-sign-up__password-label label">Password</label>
+						<input required name="passwordInput" type="password" class="form-sign-up__password log-input" placeholder="Password" minlength="6" maxlength="14">
+						<label for="" class="form-sign-up__password-label label">Confirm Password</label>
+						<input required name="passwordConfirmInput" type="password" class="form-sign-up__confirm-password log-input" placeholder="Confirm Password" minlength="6" maxlength="14">
+						<div class="form-sign-up__check-remember-me">
+							<label for="" class="form-sign-in__checkbox-label">
+								<input type="checkbox" class="form-sign-in__checkbox">
+								<span class="form-sign-in__checkbox-image"></span>
+								Remember me
+							</label>	
+						</div>
+						<button class="form-sign-up__button popup-form-button">Sign in</button>
+						<p class="form-sign-up__is-have-acc">Already have an account?
+							<a href="#popup-login" class="form-sign-up__sign-up-btn popup-link">Sign in</a>
+						</p>
+					</form>
+					<div class="popup-login__sign-in-with sign-in-with">
+						<p class="sign-in-with__text">Or sign in with</p>
+						<ul class="sign-in-with__list">
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-facebook">
+									<!-- <img src="img/icons/sign-in/Facebook.svg" alt="Facebook" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-google">
+									<!-- <img src="img/icons/sign-in/Google.svg" alt="Google" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-twitter">
+									<!-- <img src="img/icons/sign-in/Twitter.svg" alt="Twitter" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-linked-in">
+									<!-- <img src="img/icons/sign-in/Linked-In.svg" alt="Linked-In" class="sign-in-with__img"> -->
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+
+		<script src="js/discount/discount-timer.js"></script>
+		<script src="js/course-template/spoiler.js"></script>
+
+		<script src="js/testimonials-slider.js"></script>
+		<script src="js/header-burger.js"></script>
+		<script src="js/popup.js"></script>
+		<script src="js/password-confirm-validation.js"></script>
+		<script src="js/main-tabs.js"></script>
+		<script src="js/main-spoiler.js"></script>
+		<script src="js/back-to-top.js"></script>
+		<script src="js/hide-header.js"></script>
+		<!-- <script src="#source/js/popup.js"></script> -->
+		<script>
+
+		$(document).ready(function(){
+			$('.slider-check-courses').slick({
+				slidesToShow: 2,
+				autoplay: true,
+				slidesToScroll: 1,
+				arrows: true,
+				dots: false,
+				fade: false,
+				prevArrow: '<button type="button" class="slick-prev slider-check-courses-prev-btn icon-prev-btn"></button>',
+				nextArrow: '<button type="button" class="slick-next slider-check-courses-next-btn icon-next-btn"></button>',
+				
+				responsive: [{
+					breakpoint: 1120,
+					settings: {
+						slidesToShow: 1,
+					}
+				},
+				{
+					breakpoint: 570,
+					settings: {
+						arrows: false,
+						slidesToShow: 1,
+					}
+				}]
+			});
+		});
+
+			
+		</script>
+	</body>
+</html>

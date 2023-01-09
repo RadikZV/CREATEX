@@ -1,0 +1,671 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Привет SASS(SCSS)!</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/icon-font-demo.css"/>
+
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container container">
+					<div class="header__row">
+						<div class="header__navigation">
+							<a href="./index.html" class="header__logo-link">
+								<img src="img/icons/logo.svg" alt="">
+							</a>
+							<nav class="header__menu menu-header">
+								<ul class="menu-header__list custom-menu-list-768px">
+									<li class="menu-header__item">
+										<a href="./about-us.html" class="menu-header__link menu-link">About Us</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./courses.html" class="menu-header__link menu-link ">Courses</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./events.html" class="menu-header__link menu-link menu-link--active">Events</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./blog.html" class="menu-header__link menu-link">Blog</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./contacts.html" class="menu-header__link menu-link">Contacts</a>
+									</li>
+									<a href="#" class="menu-header__btn consult-btn">Get consultation</a>
+									<!-- <button class="menu-header__btn login-btn" type="button"><p class="login-btn__text">Log in / Register</p></button> -->
+								</ul>
+							</nav>
+						</div>
+						<div class="header__registration registration">
+							<a href="#" class="registration__get-btn orange-btn">Get consultation</a>
+							<a href="#popup-login" class="registration__login-btn popup-link"><p class="registration__login-btn-text">Log in / Register</p></a>
+							<div class="header__burger-btn">
+								<span></span>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</header>
+			<main class="main">
+
+				<section class="main__event-title event-title">
+					<div class="event-title__container container">
+						<div class="event-title__inner">
+							<p class="event-title__subtitle subtitle">Online lecture</p>
+							<h2 class="event-title__title title-46px">Formation of the organizational structure of the company in the face of uncertainty</h2>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__talk talk">
+					<div class="talk__container container">
+						<div class="talk__inner">
+							<div class="talk__body">
+								<h2 class="talk__title title-46px">We will talk about:</h2>
+								<div class="talk__spoiler spoiler-program one-spoiler-opened">
+									<div class="spoiler-program__item">
+										<h2 class="spoiler-program__title">
+											<span class="spoiler-program__orange-span">Theme 1. </span>Aliquet lectus urna viverra in odio.
+										</h2>
+										<p class="spoiler-program__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+									</div>
+									<div class="spoiler-program__item">
+										<h2 class="spoiler-program__title">
+											<span class="spoiler-program__orange-span">Theme 2. </span>Orci commodo, viverra orci mollis ut euismod.
+										</h2>
+										<p class="spoiler-program__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+									</div>
+									<div class="spoiler-program__item">
+										<h2 class="spoiler-program__title">
+											<span class="spoiler-program__orange-span">Theme 3. </span>Sagittis vitae facilisi rutrum amet mauris quisque vel.
+										</h2>
+										<p class="spoiler-program__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+									</div>
+									<div class="spoiler-program__item">
+										<h2 class="spoiler-program__title">
+											<span class="spoiler-program__orange-span">Theme 4. </span>In id dolor quis nunc, urna hendrerit pharetra.
+										</h2>
+										<p class="spoiler-program__text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+									</div>
+								</div>
+							</div>
+							<div class="talk__card card-talk">
+								<div class="card-talk__body">
+									<div class="card-talk__time card-talk-sample-block">
+										<p class="card-talk__subtitle">Time</p>
+										<p class="card-talk__important-info">August 5, 11:00 – 14:00</p>
+										<p class="card-talk__subsctiption">Metus turpis sit lorem lacus, in elit tellus lacus.</p>
+									</div>
+									<div class="card-talk__time card-talk-sample-block">
+										<p class="card-talk__subtitle">Price</p>
+										<p class="card-talk__important-info">Free</p>
+										<p class="card-talk__subsctiption">Nulla sem adipiscing adipiscing felis fringilla. Adipiscing mauris quam ac elit tristique dis.</p>
+									</div>
+									<a href="#" class="card-talk__link">Event on Facebook</a>
+									<a href="#" class="card-talk__join-btn orange-btn">Join the event</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__course-author course-author">
+					<div class="course-author__container container">
+						<div class="course-author__inner">
+							<div class="course-author__img-box">
+								<img src="img/main/event/author/murphy.png" alt="author" class="course-author__image">
+							</div>
+							<div class="course-author__content">
+								<p class="course-author__subtitle subtitle">Speaker</p>
+								<h3 class="course-author__name title-46px">Kathryn Murphy</h3>
+								<p class="course-author__position">Analyst and Marketing specialist in IT company</p>
+								<p class="course-author__subscription">Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam. </p>
+								<div class="course-author__partners">
+									<div class="course-author__image-box">
+										<img src="img/main/event/del-mar.png" alt="del-mar" class="body-certificate__image">
+									</div>
+									<div class="course-author__image-box">
+										<img src="img/main/event/sentinal.png" alt="sential-consulting" class="body-certificate__image">
+									</div>
+									<div class="course-author__image-box">
+										<img src="img/main/event/national.png" alt="national" class="body-certificate__image">
+									</div>
+								</div>
+								
+								<ul class="course-author__socials-list">
+									<li class="course-author__socials-item">
+										<a href="" class="course-author__socials-link icon-facebook"></a>
+									</li>
+									<li class="course-author__socials-item">
+										<a href="" class="course-author__socials-link icon-behance"></a>
+									</li>
+									<li class="course-author__socials-item">
+										<a href="" class="course-author__socials-link icon-twitter"></a>
+									</li>
+									<li class="course-author__socials-item">
+										<a href="" class="course-author__socials-link icon-linked-in"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__whom whom">
+					<div class="whom__container container">
+						<div class="whom__inner">
+							<div class="whom__content">
+								<p class="whom__subtitle subtitle">For whom?</p>
+								<h2 class="whom__title title-46px">Who will benefit from the course:</h2>
+							</div>
+							<ul class="whom__list">
+								<li class="whom__item">Specialists with more than 1 year of active work experience</li>
+								<li class="whom__item">Mobile app designers who want to improve their skills in solving business problems, creating and testing human-centered interfaces</li>
+								<li class="whom__item">Professional designers who want to feel more confident in UX</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__subscribe subscribe-event">
+					<div class="subscribe-event__container container">
+						<div class="subscribe-event__inner">
+							<div class="subscribe-event__image-box">
+								<img src="img/main/event/illustration.png" alt="">
+							</div>
+							<div class="subscribe-event__content">
+								<h2 class="subscribe-event__title event-subscribe-title">Don’t want to miss the best events?
+									Subscribe to our newsletter!</h2>
+								<form action="" class="subscribe-event__form form-subscribe-event">
+									<div class="form-subscribe-event__main">
+										<input required class="form-subscribe-event__email" type="email" pattern="+@gmail.com" placeholder="Your working email">
+										<button class="form-subscribe-event__sent-btn" >Subscribe</button>
+									</div>
+									<div class="form-sign-in__check-forgot">
+										<label for="" class="form-sign-in__checkbox-label">
+											<input type="checkbox" class="form-sign-in__checkbox">
+											<span class="form-sign-in__checkbox-image"></span>
+											I agree to receive communications from Createx Online School
+										</label>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__request request">
+					<div class="request__container container">
+						<div class="request__inner">
+							<div class="request__content">
+								<div class="request__header">
+									<p class="request__subtitle subtitle">Don’t miss the event</p>
+									<h2 class="request__title title-46px">Leave a request</h2>
+								</div>
+								<form action="" class="request__form form-request">
+									<div class="form-request__important-info">
+										<div class="form-request__item">
+											<label for="" class="form-request__label label">Full Name</label>
+											<input type="text" class="form-request__input log-input" required placeholder="Your full name">
+										</div>
+										<div class="form-request__item">
+											<label for="" class="form-request__label label">Email</label>
+											<input type="email" class="form-request__input log-input" pattern=".+@gmail.com" required placeholder="Your working email">
+										</div>
+										<div class="form-request__item">
+											<label for="" class="form-request__label label">Phone</label>
+											<input type="tel" class="form-request__input log-input" pattern="[+380][0-9]{9}" required placeholder="Your phone number">
+										</div>
+									</div>
+									<div class="form-request__submit-box">
+										<button type="submit" href="#" class="form-request__btn orange-btn">Join the event</button>
+										<label for="" class="form-request__submit-label">* You will receive a link to the online lecture in an email after registration.</label>
+									</div>
+								</form>
+							</div>
+							<div class="request__image-box">
+								<img src="img/main/event/form-img.png" alt="form-img" class="request__image">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__check-events check-events check-events__slider-box">
+					<div class="check-events__container container">
+						<div class="check-events__inner">
+							<div class="check-events__header">
+								<p class="check-events__subtitle subtitle">Check other online events</p>
+								<h2 class="check-events__title title-46px">You may be interested in</h2>
+							</div>
+							<div class="check-events__content">
+								<div class="check-events__slider slider-check-events">
+									<div class="slider-check-events__item item-slider-event">
+										<div class="item-slider-event__row events__item ">
+											<div class="item-slider-event__date item-events__date">
+												<p class="item-slider-event__day-number item-events__day-number">05</p>
+												<div class="item-slider-event__date-info item-events__date-info">
+													<p class="item-slider-event__month item-events__month">August</p>
+													<p class="item-slider-event__time item-events__time">11:00 – 14:00</p>
+												</div>
+											</div>
+											<div class="item-slider-event__content item-events__content">
+												<a href="#" class="item-slider-event__topic item-events__topic">Formation of the organizational structure of the company in the face of uncertainty.</a>
+												<p class="item-slider-event__kind-of-event item-events__kind-of-event">Onine master-class</p>
+											</div>
+											<a href="#" class="item-slider-event__link orange-border-btn">View more</a>
+										</div>
+									</div>
+									<div class="slider-check-events__item item-slider-event">
+										<div class="item-slider-event__row events__item ">
+											<div class="item-slider-event__date item-events__date">
+												<p class="item-slider-event__day-number item-events__day-number">24</p>
+												<div class="item-slider-event__date-info item-events__date-info">
+													<p class="item-slider-event__month item-events__month">July</p>
+													<p class="item-slider-event__time item-events__time">11:00 – 12:30</p>
+												</div>
+											</div>
+											<div class="item-slider-event__content item-events__content">
+												<a href="#" class="item-slider-event__topic item-events__topic">Building a customer service department. Best Practices.</a>
+												<p class="item-slider-event__kind-of-event item-events__kind-of-event">Onine lecture</p>
+											</div>
+											<a href="#" class="item-slider-event__link orange-border-btn">View more</a>
+										</div>
+									</div>
+									<div class="slider-check-events__item item-slider-event item-events">
+										<div class="item-slider-event__row events__item item-slider-event ">
+											<div class="item-slider-event__date item-events__date">
+												<p class="item-slider-event__day-number item-events__day-number">16</p>
+												<div class="item-slider-event__date-info item-events__date-info">
+													<p class="item-slider-event__month item-events__month">July</p>
+													<p class="item-slider-event__time item-events__time">10:00 – 13:00</p>
+												</div>
+											</div>
+											<div class="item-slider-event__content item-events__content">
+												<a href="#" class="item-slider-event__topic item-events__topic">How to apply methods of speculative design in practice. Worldbuilding prototyping.</a>
+												<p class="item-slider-event__kind-of-event item-events__kind-of-event">Onine workshop</p>
+											</div>
+											<a href="#" class="item-slider-event__link orange-border-btn">View more</a>
+										</div>
+									</div>
+									<div class="slider-check-events__item item-slider-event item-events">
+										<div class="item-slider-event__row events__item item-slider-event ">
+											<div class="item-slider-event__date item-events__date">
+												<p class="item-slider-event__day-number item-events__day-number">10</p>
+												<div class="item-slider-event__date-info item-events__date-info">
+													<p class="item-slider-event__month item-events__month">July</p>
+													<p class="item-slider-event__time item-events__time">9:00 – 14:00</p>
+												</div>
+											</div>
+											<div class="item-slider-event__content item-events__content">
+												<a href="#" class="item-slider-event__topic item-events__topic">Find and evaluate: search and assessment tools for candidates.</a>
+												<p class="item-slider-event__kind-of-event item-events__kind-of-event">Onine workshop</p>
+											</div>
+											<a href="#" class="item-slider-event__link orange-border-btn">View more</a>
+										</div>
+									</div>
+									<div class="slider-check-events__item item-slider-event item-events">
+										<div class="item-slider-event__row events__item item-slider-event ">
+											<div class="item-slider-event__date item-events__date">
+												<p class="item-slider-event__day-number item-events__day-number">27</p>
+												<div class="item-slider-event__date-info item-events__date-info">
+													<p class="item-slider-event__month item-events__month">June</p>
+													<p class="item-slider-event__time item-events__time">15:00 – 19:00</p>
+												</div>
+											</div>
+											<div class="item-slider-event__content item-events__content">
+												<a href="#" class="item-slider-event__topic item-events__topic">Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI.</a>
+												<p class="item-slider-event__kind-of-event item-events__kind-of-event">Onine master-class</p>
+											</div>
+											<a href="#" class="item-slider-event__link orange-border-btn">View more</a>
+										</div>
+									</div>
+									<div class="slider-check-events__item item-slider-event item-events">
+										<div class="item-slider-event__row events__item item-slider-event ">
+											<div class="item-slider-event__date item-events__date">
+												<p class="item-slider-event__day-number item-events__day-number">15</p>
+												<div class="item-slider-event__date-info item-events__date-info">
+													<p class="item-slider-event__month item-events__month">June</p>
+													<p class="item-slider-event__time item-events__time">10:00 – 12:00</p>
+												</div>
+											</div>
+											<div class="item-slider-event__content item-events__content">
+												<a href="#" class="item-slider-event__topic item-events__topic">Marketing or growth hacking: main differences and what business needs.</a>
+												<p class="item-slider-event__kind-of-event item-events__kind-of-event">Onine lecture</p>
+											</div>
+											<a href="#" class="item-slider-event__link orange-border-btn">View more</a>
+										</div>
+									</div>
+									<div class="slider-check-events__item item-slider-event item-events">
+										<div class="item-slider-event__row events__item item-slider-event ">
+											<div class="item-slider-event__date item-events__date">
+												<p class="item-slider-event__day-number item-events__day-number">02</p>
+												<div class="item-slider-event__date-info item-events__date-info">
+													<p class="item-slider-event__month item-events__month">June</p>
+													<p class="item-slider-event__time item-events__time">11:00 – 13:00</p>
+												</div>
+											</div>
+											<div class="item-slider-event__content item-events__content">
+												<a href="#" class="item-slider-event__topic item-events__topic">How to brief a client and present your design to approve it from the first show.</a>
+												<p class="item-slider-event__kind-of-event item-events__kind-of-event">Onine lecture</p>
+											</div>
+											<a href="#" class="item-slider-event__link orange-border-btn">View more</a>
+										</div>
+									</div>
+									<div class="slider-check-events__item item-slider-event item-events">
+										<div class="item-slider-event__row events__item item-slider-event ">
+											<div class="item-slider-event__date item-events__date">
+												<p class="item-slider-event__day-number item-events__day-number">29</p>
+												<div class="item-slider-event__date-info item-events__date-info">
+													<p class="item-slider-event__mont item-events__month">May</p>
+													<p class="item-slider-event__time item-events__time">11:00 – 12:00</p>
+												</div>
+											</div>
+											<div class="item-slider-event__content item-events__content">
+												<a href="#" class="item-slider-event__topic item-events__topic">Who is a project manager and do I want to be PM?</a>
+												<p class="item-slider-event__kind-of-event item-events__kind-of-event">Onine lecture</p>
+											</div>
+											<a href="#" class="item-slider-event__link orange-border-btn">View more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="check-events__footer">
+								<p class="check-events__text">Do you want more?</p>
+								<a href="" class="check-events__link orange-btn">Explore all events</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</main>
+			<footer class="footer">
+				<div class="footer__container container">
+					<div class="footer__row">
+						<div class="footer__about-company about-company">
+							<img src="img/icons/white-bg-logo.svg" alt="Footer logo" class="about-company__logo">
+							<p class="about-company__text-info">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country. </p>
+							<ul class="about-company__socials-list">
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Facebook.svg" alt="facebook" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Twitter.svg" alt="twitter" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/YouTube.svg" alt="youtube" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/telegram.svg" alt="telegram" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Instagram.svg" alt="instagram" class="about-company__socials-img">
+									</a>	
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Linked-In.svg" alt="linkedIn" class="about-company__socials-img">
+									</a>
+								</li> 
+							</ul>
+						</div>
+						<nav class="footer__menu menu-footer">
+							<div class="menu-footer__additionals">
+								<div class="menu-footer__site-map">
+									<h3 class="menu-footer__list-title">site map</h3>
+									<ul class="menu-footer__site-map-list">
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">About Us</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Courses</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Events</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Blog</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Contacts</a>
+										</li>
+									</ul>	
+								</div>
+								<div class="menu-footer__courses">
+									<h3 class="menu-footer__list-title">COURSES</h3>
+									<ul class="menu-footer__courses-list">
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Marketing</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Management</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">HR & Recruting</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Design</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Development</a>
+										</li>
+									</ul>	
+								</div>
+								<div class="menu-footer__contact-us">
+									<h3 class="menu-footer__list-title">CONTACT US</h3>
+									<ul class="menu-footer__contact-us-list contact-us-list">
+										<li class="menu-footer__item contact-us-list__item">
+											<a href="tel:+(405) 555-0128" class="menu-footer__link">(405) 555-0128</a>
+										</li>
+										<li class="menu-footer__item contact-us-list__item">
+											<a href="mailto:hello@createx.com" class="menu-footer__link">hello@createx.com</a>
+										</li>
+									</ul>	
+								</div>
+							</div>
+							<form class="menu-footer__form form-footer">
+								<h3 class="form-footer__title menu-footer__list-title">SIGN UP TO OUR NEWSLETTER</h3>
+								<div class="form-footer__input-block">
+									<input required type="email" placeholder="Email address" pattern="+@gmail.com" class="form-footer__email">
+									<button href="#" class="form-footer__sent-btn">
+										<img src="img/icons/white-arrow.svg" alt="arrow">
+									</button>	
+								</div>
+								<p class="form-footer__agree-text">*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+							</form>
+						</nav>
+					</div>
+				</div>
+				<div class="footer__copyrights copyrights-footer">
+					<div class="copyrights-footer__container container">
+						<p class="copyrights-footer__text">© All rights reserved.Made with <img src="img/icons/Heart.svg" alt="heart"> by Createx Studio </p>
+						<a href="#" class="copyrights-footer__gototop-btn">GO TO TOP</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div class="popup-login popup" id="popup-login">
+			<div class="popup-login__body popup__body">
+				<div class="popup-login__content popup__content">
+					<a href="#" class="popup-login__close-btn close-btn">
+						<img src="img/icons/sign-in/cross.svg" alt="cross">
+					</a>
+					<div class="popup-login__sign-in-body sign-in">
+						<h2 class="sign-in__title popup-title">Sign in</h2>
+						<p class="sign-in__text popup-text">Sign in to your account using email and password provided during registration.</p>
+					</div>
+					<form class="popup-login__form form-sign-in">
+						<label for="" class="form-sign-in__email-label label">Email</label>
+						<input required type="email" class="form-sign-in__email log-input" pattern=".+@gmail.com" reqired placeholder="Your working email">
+						<label for="" class="form-sign-in__password-label label">Password</label>
+						<input required type="password" class="form-sign-in__password log-input" placeholder="Password" minlength="6" maxlength="14">
+						<div class="form-sign-in__check-forgot">
+							<label for="" class="form-sign-in__checkbox-label">
+								<input type="checkbox" class="form-sign-in__checkbox">
+								<span class="form-sign-in__checkbox-image"></span>
+								Keep me signed in
+							</label>
+							<a href="#" class="form-sign-in__forgot-pass">Forgot password?</a>
+						</div>
+						<button class="form-sign-in__button popup-form-button">Sign in</button>
+						<p class="form-sign-in__is-have-acc">Don't have an account? 
+							<a href="#popup-sign-up" class="form-sign-in__sign-up-btn popup-link">Sign up</a>
+						</p>
+					</form>
+					<div class="popup-login__sign-in-with sign-in-with">
+						<p class="sign-in-with__text">Or sign in with</p>
+						<ul class="sign-in-with__list">
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-facebook">
+									<!-- <img src="img/icons/sign-in/Facebook.svg" alt="Facebook" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-google">
+									<!-- <img src="img/icons/sign-in/Google.svg" alt="Google" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-twitter">
+									<!-- <img src="img/icons/sign-in/Twitter.svg" alt="Twitter" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-linked-in">
+									<!-- <img src="img/icons/sign-in/Linked-In.svg" alt="Linked-In" class="sign-in-with__img"> -->
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup-sing-up popup" id="popup-sign-up">
+			<div class="popup-sign-up popup__body">
+				<div class="popup-sign-in__content popup__content">
+					<a href="#" class="popup-sign-in__close-btn close-btn">
+						<img src="img/icons/sign-in/cross.svg" alt="cross">
+					</a>
+					<div class="popup-sing-up__body sign-up-body">
+						<h2 class="sign-up-body__title popup-title">Sign up</h2>
+						<p class="sign-up-body__text popup-text">Registration takes less than a minute but gives you full control over your studying.</p>
+					</div>
+					<form class="popup-sign-up__form form-sign-up">
+						<label for="" class="form-sign-up__full-name-label label">Full Name</label>
+						<input required type="text" class="form-sign-up__full-name-input log-input" placeholder="Your full name">
+						<label for="" class="form-sign-up__email-label label">Email</label>
+						<input required type="email" pattern=".+@gmail.com" class="form-sign-up__email log-input" pattern=".+@gmail.com" placeholder="Your working email">
+						<label for="" class="form-sign-up__password-label label">Password</label>
+						<input required name="passwordInput" type="password" class="form-sign-up__password log-input" placeholder="Password" minlength="6" maxlength="14">
+						<label for="" class="form-sign-up__password-label label">Confirm Password</label>
+						<input required name="passwordConfirmInput" type="password" class="form-sign-up__confirm-password log-input" placeholder="Confirm Password" minlength="6" maxlength="14">
+						<div class="form-sign-up__check-remember-me">
+							<label for="" class="form-sign-in__checkbox-label">
+								<input type="checkbox" class="form-sign-in__checkbox">
+								<span class="form-sign-in__checkbox-image"></span>
+								Remember me
+							</label>	
+						</div>
+						<button class="form-sign-up__button popup-form-button">Sign in</button>
+						<p class="form-sign-up__is-have-acc">Already have an account?
+							<a href="#popup-login" class="form-sign-up__sign-up-btn popup-link">Sign in</a>
+						</p>
+					</form>
+					<div class="popup-login__sign-in-with sign-in-with">
+						<p class="sign-in-with__text">Or sign in with</p>
+						<ul class="sign-in-with__list">
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-facebook">
+									<!-- <img src="img/icons/sign-in/Facebook.svg" alt="Facebook" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-google">
+									<!-- <img src="img/icons/sign-in/Google.svg" alt="Google" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-twitter">
+									<!-- <img src="img/icons/sign-in/Twitter.svg" alt="Twitter" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-linked-in">
+									<!-- <img src="img/icons/sign-in/Linked-In.svg" alt="Linked-In" class="sign-in-with__img"> -->
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+
+		<script src="js/discount/discount-timer.js"></script>
+		<script src="js/course-template/spoiler.js"></script>
+
+		<script src="js/testimonials-slider.js"></script>
+		<script src="js/header-burger.js"></script>
+		<script src="js/popup.js"></script>
+		<script src="js/password-confirm-validation.js"></script>
+		<script src="js/main-tabs.js"></script>
+		<script src="js/main-spoiler.js"></script>
+		<script src="js/back-to-top.js"></script>
+		<script src="js/hide-header.js"></script>
+		<!-- <script src="#source/js/popup.js"></script> -->
+		<script>
+
+		$(document).ready(function(){
+			$('.slider-check-events').slick({
+				slidesToShow: 3,
+				autoplay: true,
+				slidesToScroll: 1,
+				arrows: true,
+				dots: false,
+				fade: false,
+				prevArrow: '<button type="button" class="slick-prev slider-check-courses-prev-btn icon-prev-btn"></button>',
+				nextArrow: '<button type="button" class="slick-next slider-check-courses-next-btn icon-next-btn"></button>',
+				
+				responsive: [{
+					breakpoint: 991,
+					settings: {
+						slidesToShow: 2,
+					}
+				},
+				{
+					breakpoint: 570,
+					settings: {
+						arrows: false,
+						slidesToShow: 1,
+					}
+				}]
+			});
+		});
+
+			
+		</script>
+	</body>
+</html>

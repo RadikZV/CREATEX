@@ -1,0 +1,974 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Привет SASS(SCSS)!</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/icon-font-demo.css"/>
+
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+
+	<template id="course-item-template">
+		<div class="courses__item item-courses" data-item-category="{{topic}}">
+			<div class="item-courses__image-box">
+				<img src="{{src}}" alt="" class="item-courses__img">
+			</div>
+			<div class="item-courses__body">
+				<span class="item-courses__topic cources-featured__topic">{{topic}}</span>
+				<h2 class="item-courses__name cources-featured__name">
+					<a href="./course-template.html" class="item-courses__link">{{title}}</a>
+				</h2>
+				<div class="cources-featured__info">
+					<span class="item-courses__price cources-featured__price">{{price}}</span> <span class="item-courses__author cources-featured__author">| by {{author}}</span>
+				</div>
+			</div>
+		</div>
+	</template>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container container">
+					<div class="header__row">
+						<div class="header__navigation">
+							<a href="./index.html" class="header__logo-link">
+								<img src="img/icons/logo.svg" alt="">
+							</a>
+							<nav class="header__menu menu-header">
+								<ul class="menu-header__list custom-menu-list-768px">
+									<li class="menu-header__item">
+										<a href="./about-us.html" class="menu-header__link menu-link">About Us</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./courses.html" class="menu-header__link menu-link menu-link--active">Courses</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./events.html" class="menu-header__link menu-link">Events</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./blog.html" class="menu-header__link menu-link">Blog</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./contacts.html" class="menu-header__link menu-link">Contacts</a>
+									</li>
+									<a href="#" class="menu-header__btn consult-btn">Get consultation</a>
+									<!-- <button class="menu-header__btn login-btn" type="button"><p class="login-btn__text">Log in / Register</p></button> -->
+								</ul>
+							</nav>
+						</div>
+						<div class="header__registration registration">
+							<a href="#" class="registration__get-btn orange-btn">Get consultation</a>
+							<a href="#popup-login" class="registration__login-btn popup-link"><p class="registration__login-btn-text">Log in / Register</p></a>
+							<div class="header__burger-btn">
+								<span></span>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</header>
+			<main class="main">
+
+				<section class="main__courses courses">
+					<div class="courses__container container">
+						<div class="courses__header">
+							<p class="courses__subtitle subtitle">Enjoy your studying!</p>
+							<h2 class="courses__title title-46px">Our online courses</h2>
+						</div>
+						<div class="courses__inner">
+							<div class="courses__categories">
+								<div class="courses__categories-list" id="courses__categories-list">
+									<div class="courses__category active--category" data-category="All">
+										<p class="courses__category-name">All</p>
+										<span class="courses__category-quantity courses__all-category-quantity"></span>
+									 </div>
+									<div class="courses__category" data-category="Marketing" data-category-name-array="marketing">
+										<p class="courses__category-name">Marketing</p>
+										<span class="courses__category-quantity"></span>
+									</div>
+									<div class="courses__category" data-category="Management" data-category-name-array="management">
+										<p class="courses__category-name">Management</p>
+										<span class="courses__category-quantity"></span>
+									</div>
+									<div class="courses__category" data-category="HR & Recruting" data-category-name-array="hrAndRecruting">
+										<p class="courses__category-name">HR & Recruting</p>
+										<span class="courses__category-quantity"></span>
+									</div>
+									<div class="courses__category" data-category="Design" data-category-name-array="design">
+										<p class="courses__category-name">Design</p>
+										<span class="courses__category-quantity"></span>
+									</div>
+									<div class="courses__category" data-category="Development" data-category-name-array="development">
+										<p class="courses__category-name">Development</p>
+										<span class="courses__category-quantity"></span>
+									</div>
+								</div>
+								<form class="courses__search-form search-form-min-width-768px">
+									<input class="courses__search" type="search" placeholder="Search course...">
+									<span class="courses__span">
+										<img src="img/icons/search.svg" alt="" class="courses__search-icon">
+									</span>
+								</form>
+								
+							</div>
+							<div class="categories-slider">
+								<div class="courses__categories-list categories-slider__list" id="courses__categories-list">
+									<div class="courses__category categories-slider__category active--category" data-category="All">
+										<p class="courses__category-name categories-slider__category-name">All</p> 
+										<span class="courses__category-quantity courses__all-category-quantity"></span>
+									</div>
+									<div class="courses__category categories-slider__category" data-category="Marketing">
+										<p class="courses__category-name">Marketing</p> 
+										<span class="courses__category-quantity"></span> 
+									</div>
+									<div class="courses__category categories-slider__category" data-category="Management">
+										<p class="courses__category-name categories-slider__category-name">Management</p> 
+										<span class="courses__category-quantity"></span> 
+									</div>
+									<div class="courses__category categories-slider__category" data-category="HR & Recruting">
+										<p class="courses__category-name categories-slider__category-name">HR & Recruting</p> 
+										<span class="courses__category-quantity"></span> 
+									</div>
+									<div class="courses__category categories-slider__category" data-category="Design">
+										<p class="courses__category-name categories-slider__category-name">Design</p> 
+										<span class="courses__category-quantity"></span> 
+									</div>
+									<div class="courses__category categories-slider__category" data-category="Development">
+										<p class="courses__category-name categories-slider__category-name">Development</p> 
+										<span class="courses__category-quantity"></span>
+									</div>
+								</div>
+							</div>
+							<form class="courses__search-form search-form-max-width-768px">
+								<input class="courses__search" type="search" placeholder="Search course...">
+								<span class="courses__span">
+									<img src="img/icons/search.svg" alt="" class="courses__search-icon">
+								</span>
+							</form>
+							<div class="courses__items" id="courses__items">
+							</div>
+							<!-- <button class="courses__load-more-btn" id="courses__load-more-btn">
+								Load more
+							</button> -->
+						</div>
+					</div>
+				</section>
+
+				<section class="main__testimonials testimonials">
+					<div class="testimonials__container container">
+						<div class="testimonials__inner">
+							<div class="testimonials__header">
+								<p class="testimonials__subtitle subtitle">TESTIMONIALS</p>
+								<h2 class="testimonials__title title-46px">What our students say</h2>
+							</div>
+							<div class="testimonials__content">
+								<div class="testimonials__slider slider-testimonials">
+									<div class="slider-testimonials__item item-testimonials-slider">
+										<div class="item-testimonials-slider__content">
+											<p class="item-testimonials-slider__review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+											<div class="item-testimonials-slider__reviewer">
+												<div class="item-testimonials-slider__reviewer-image-box">
+													<img src="img/main/testimonials/reviewer-img.jpg" alt="reviewer-img" class="item-testimonials-slider__reviewer-image">
+												</div>
+												<div class="item-testimonials-slider__reviewer-info">
+													<p class="item-testimonials-slider__reviewer-name">Eleanor Pena</p>
+													<p class="item-testimonials-slider__reviewer-position">Position, Course</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slider-testimonials__item item-testimonials-slider">
+										<div class="item-testimonials-slider__content">
+											<p class="item-testimonials-slider__review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+											<div class="item-testimonials-slider__reviewer">
+												<div class="item-testimonials-slider__reviewer-image-box">
+													<img src="img/main/testimonials/reviewer-img.jpg" alt="reviewer-img" class="item-testimonials-slider__reviewer-image">
+												</div>
+												<div class="item-testimonials-slider__reviewer-info">
+													<p class="item-testimonials-slider__reviewer-name">Eleanor Pena</p>
+													<p class="item-testimonials-slider__reviewer-position">Position, Course</p>
+												</div>
+											</div>	
+										</div>
+									</div>
+									<div class="slider-testimonials__item item-testimonials-slider">
+										<div class="item-testimonials-slider__content">
+											<p class="item-testimonials-slider__review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+											<div class="item-testimonials-slider__reviewer">
+												<div class="item-testimonials-slider__reviewer-image-box">
+													<img src="img/main/testimonials/reviewer-img.jpg" alt="reviewer-img" class="item-testimonials-slider__reviewer-image">
+												</div>
+												<div class="item-testimonials-slider__reviewer-info">
+													<p class="item-testimonials-slider__reviewer-name">Eleanor Pena</p>
+													<p class="item-testimonials-slider__reviewer-position">Position, Course</p>
+												</div>
+											</div>	
+										</div>
+										
+									</div>
+									<div class="slider-testimonials__item item-testimonials-slider">
+										<div class="item-testimonials-slider__content">
+											<p class="item-testimonials-slider__review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+											<div class="item-testimonials-slider__reviewer">
+												<div class="item-testimonials-slider__reviewer-image-box">
+													<img src="img/main/testimonials/reviewer-img.jpg" alt="reviewer-img" class="item-testimonials-slider__reviewer-image">
+												</div>
+												<div class="item-testimonials-slider__reviewer-info">
+													<p class="item-testimonials-slider__reviewer-name">Eleanor Pena</p>
+													<p class="item-testimonials-slider__reviewer-position">Position, Course</p>
+												</div>
+											</div>	
+										</div>
+										
+									</div>
+									<div class="slider-testimonials__item item-testimonials-slider">
+										<div class="item-testimonials-slider__content">
+											<p class="item-testimonials-slider__review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+											<div class="item-testimonials-slider__reviewer">
+												<div class="item-testimonials-slider__reviewer-image-box">
+													<img src="img/main/testimonials/reviewer-img.jpg" alt="reviewer-img" class="item-testimonials-slider__reviewer-image">
+												</div>
+												<div class="item-testimonials-slider__reviewer-info">
+													<p class="item-testimonials-slider__reviewer-name">Eleanor Pena</p>
+													<p class="item-testimonials-slider__reviewer-position">Position, Course</p>
+												</div>
+											</div>	
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__certificate certificate">
+					<div class="certificate__container container">
+						<div class="certificate__inner inner-courses-certificate">
+							<div class="certificate__body body-certificate">
+								<div class="body-certificate__context">
+									<p class="body-certificate__subtitle subtitle">Createx Certificate</p>
+									<h3 class="body-certificate__title title-46px">Your expertise will be confirmed</h3>
+									<p class="body-certificate__text">We are accredited by international professional organizations and institutes:</p>
+								</div>
+								<div class="body-certificate__partners">
+									<div class="body-certificate__image-box">
+										<img src="img/main/certificate/partners/del-mar.svg" alt="del-mar" class="body-certificate__image">
+									</div>
+									<div class="body-certificate__image-box">
+										<img src="img/main/certificate/partners/sential-consulting.svg" alt="sential-consulting" class="body-certificate__image">
+									</div>
+									<div class="body-certificate__image-box">
+										<img src="img/main/certificate/partners/national.svg" alt="national" class="body-certificate__image">
+									</div>
+								</div>
+							</div>
+							<div class="certificate__img-box">
+								<img src="img/main/certificate/certificate.jpg" alt="certificate" class="certificate__image">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__subcribe subscribe">
+					<div class="subscribe__container container">
+						<p class="subscribe__subtitle">Don’t miss anything</p>
+						<h2 class="subscribe__title title">Subscribe to the Createx School announcements</h2>
+						<form class="subscribe__form form-subscribe">
+							<input required class="form-subscribe__email" type="email" pattern="+@gmail.com" placeholder="Your working email">
+							<button class="form-subscribe__sent-btn" >Subscribe</button>
+						</form>	
+					</div>
+				</section>
+				<div class="main__container container">
+					
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="footer__container container">
+					<div class="footer__row">
+						<div class="footer__about-company about-company">
+							<img src="img/icons/white-bg-logo.svg" alt="Footer logo" class="about-company__logo">
+							<p class="about-company__text-info">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country. </p>
+							<ul class="about-company__socials-list">
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Facebook.svg" alt="facebook" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Twitter.svg" alt="twitter" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/YouTube.svg" alt="youtube" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/telegram.svg" alt="telegram" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Instagram.svg" alt="instagram" class="about-company__socials-img">
+									</a>	
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Linked-In.svg" alt="linkedIn" class="about-company__socials-img">
+									</a>
+								</li> 
+							</ul>
+						</div>
+						<nav class="footer__menu menu-footer">
+							<div class="menu-footer__additionals">
+								<div class="menu-footer__site-map">
+									<h3 class="menu-footer__list-title">site map</h3>
+									<ul class="menu-footer__site-map-list">
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">About Us</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Courses</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Events</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Blog</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Contacts</a>
+										</li>
+									</ul>	
+								</div>
+								<div class="menu-footer__courses">
+									<h3 class="menu-footer__list-title">COURSES</h3>
+									<ul class="menu-footer__courses-list">
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Marketing</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Management</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">HR & Recruting</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Design</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Development</a>
+										</li>
+									</ul>	
+								</div>
+								<div class="menu-footer__contact-us">
+									<h3 class="menu-footer__list-title">CONTACT US</h3>
+									<ul class="menu-footer__contact-us-list contact-us-list">
+										<li class="menu-footer__item contact-us-list__item">
+											<a href="tel:+(405) 555-0128" class="menu-footer__link">(405) 555-0128</a>
+										</li>
+										<li class="menu-footer__item contact-us-list__item">
+											<a href="mailto:hello@createx.com" class="menu-footer__link">hello@createx.com</a>
+										</li>
+									</ul>	
+								</div>
+							</div>
+							<form class="menu-footer__form form-footer">
+								<h3 class="form-footer__title menu-footer__list-title">SIGN UP TO OUR NEWSLETTER</h3>
+								<div class="form-footer__input-block">
+									<input required type="email" placeholder="Email address" pattern="+@gmail.com" class="form-footer__email">
+									<button href="#" class="form-footer__sent-btn">
+										<img src="img/icons/white-arrow.svg" alt="arrow">
+									</button>	
+								</div>
+								<p class="form-footer__agree-text">*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+							</form>
+						</nav>
+					</div>
+				</div>
+				<div class="footer__copyrights copyrights-footer">
+					<div class="copyrights-footer__container container">
+						<p class="copyrights-footer__text">© All rights reserved.Made with <img src="img/icons/Heart.svg" alt="heart"> by Createx Studio </p>
+						<a href="#" class="copyrights-footer__gototop-btn">GO TO TOP</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div class="popup-login popup" id="popup-login">
+			<div class="popup-login__body popup__body">
+				<div class="popup-login__content popup__content">
+					<a href="#" class="popup-login__close-btn close-btn">
+						<img src="img/icons/sign-in/cross.svg" alt="cross">
+					</a>
+					<div class="popup-login__sign-in-body sign-in">
+						<h2 class="sign-in__title popup-title">Sign in</h2>
+						<p class="sign-in__text popup-text">Sign in to your account using email and password provided during registration.</p>
+					</div>
+					<form class="popup-login__form form-sign-in">
+						<label for="" class="form-sign-in__email-label label">Email</label>
+						<input required type="email" class="form-sign-in__email log-input" pattern=".+@gmail.com" reqired placeholder="Your working email">
+						<label for="" class="form-sign-in__password-label label">Password</label>
+						<input required type="password" class="form-sign-in__password log-input" placeholder="Password" minlength="6" maxlength="14">
+						<div class="form-sign-in__check-forgot">
+							<label for="" class="form-sign-in__checkbox-label">
+								<input type="checkbox" class="form-sign-in__checkbox">
+								<span class="form-sign-in__checkbox-image"></span>
+								Keep me signed in
+							</label>
+							<a href="#" class="form-sign-in__forgot-pass">Forgot password?</a>
+						</div>
+						<button class="form-sign-in__button popup-form-button">Sign in</button>
+						<p class="form-sign-in__is-have-acc">Don't have an account? 
+							<a href="#popup-sign-up" class="form-sign-in__sign-up-btn popup-link">Sign up</a>
+						</p>
+					</form>
+					<div class="popup-login__sign-in-with sign-in-with">
+						<p class="sign-in-with__text">Or sign in with</p>
+						<ul class="sign-in-with__list">
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-facebook">
+									<!-- <img src="img/icons/sign-in/Facebook.svg" alt="Facebook" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-google">
+									<!-- <img src="img/icons/sign-in/Google.svg" alt="Google" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-twitter">
+									<!-- <img src="img/icons/sign-in/Twitter.svg" alt="Twitter" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-linked-in">
+									<!-- <img src="img/icons/sign-in/Linked-In.svg" alt="Linked-In" class="sign-in-with__img"> -->
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup-sing-up popup" id="popup-sign-up">
+			<div class="popup-sign-up popup__body">
+				<div class="popup-sign-in__content popup__content">
+					<a href="#" class="popup-sign-in__close-btn close-btn">
+						<img src="img/icons/sign-in/cross.svg" alt="cross">
+					</a>
+					<div class="popup-sing-up__body sign-up-body">
+						<h2 class="sign-up-body__title popup-title">Sign up</h2>
+						<p class="sign-up-body__text popup-text">Registration takes less than a minute but gives you full control over your studying.</p>
+					</div>
+					<form class="popup-sign-up__form form-sign-up">
+						<label for="" class="form-sign-up__full-name-label label">Full Name</label>
+						<input required type="text" class="form-sign-up__full-name-input log-input" placeholder="Your full name">
+						<label for="" class="form-sign-up__email-label label">Email</label>
+						<input required type="email" pattern=".+@gmail.com" class="form-sign-up__email log-input" pattern=".+@gmail.com" placeholder="Your working email">
+						<label for="" class="form-sign-up__password-label label">Password</label>
+						<input required name="passwordInput" type="password" class="form-sign-up__password log-input" placeholder="Password" minlength="6" maxlength="14">
+						<label for="" class="form-sign-up__password-label label">Confirm Password</label>
+						<input required name="passwordConfirmInput" type="password" class="form-sign-up__confirm-password log-input" placeholder="Confirm Password" minlength="6" maxlength="14">
+						<div class="form-sign-up__check-remember-me">
+							<label for="" class="form-sign-in__checkbox-label">
+								<input type="checkbox" class="form-sign-in__checkbox">
+								<span class="form-sign-in__checkbox-image"></span>
+								Remember me
+							</label>	
+						</div>
+						<button class="form-sign-up__button popup-form-button">Sign in</button>
+						<p class="form-sign-up__is-have-acc">Already have an account?
+							<a href="#popup-login" class="form-sign-up__sign-up-btn popup-link">Sign in</a>
+						</p>
+					</form>
+					<div class="popup-login__sign-in-with sign-in-with">
+						<p class="sign-in-with__text">Or sign in with</p>
+						<ul class="sign-in-with__list">
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-facebook">
+									<!-- <img src="img/icons/sign-in/Facebook.svg" alt="Facebook" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-google">
+									<!-- <img src="img/icons/sign-in/Google.svg" alt="Google" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-twitter">
+									<!-- <img src="img/icons/sign-in/Twitter.svg" alt="Twitter" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-linked-in">
+									<!-- <img src="img/icons/sign-in/Linked-In.svg" alt="Linked-In" class="sign-in-with__img"> -->
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script src="js/mustache.min.js"></script>
+		<script src="js/courses/load-more.js"></script>
+		
+
+		<script src="js/testimonials-slider.js"></script>
+		<script src="js/courses/categories-slider.js"></script>
+		<script src="js/header-burger.js"></script>
+		<script src="js/popup.js"></script>
+		<script src="js/password-confirm-validation.js"></script>
+		<script src="js/main-tabs.js"></script>
+		<script src="js/main-spoiler.js"></script>
+		<script src="js/back-to-top.js"></script>
+		<script src="js/hide-header.js"></script>
+		<!-- <script src="#source/js/popup.js"></script> -->
+		<script>
+
+
+		// $(".courses__search").after(url('img/icons/search.svg'))
+			
+// 		let courses = [
+// 			{
+// 				id: 1,
+// 				src: "img/main/courses/courses-page/1.png",
+// 				topic: "Marketing",
+// 				title: "The Ultimate Google Ads Training Course",
+// 				price: "$100",
+// 				author: "Jerome Bell"
+// 			},
+// 			{
+// 				id: 2,
+// 				src: "img/main/courses/courses-page/2.png",
+// 				topic: "Management",
+// 				title: "Product Management Fundamentals",
+// 				price: "$480",
+// 				author: "Marvin McKinney"
+// 			},
+// 			{
+// 				id: 3,
+// 				src: "img/main/courses/courses-page/3.png",
+// 				topic: "HR & Recruting",
+// 				title: "HR  Management and Analytics",
+// 				price: "$200",
+// 				author: "Leslie Alexander Li"
+// 			},
+// 			{
+// 				id: 4,
+// 				src: "img/main/courses/courses-page/4.png",
+// 				topic: "Marketing",
+// 				title: "Brand Management & PR Communications",
+// 				price: "$530",
+// 				author: "Kristin Watson"
+// 			},
+// 			{
+// 				id: 5,
+// 				src: "img/main/courses/courses-page/5.png",
+// 				topic: "Management",
+// 				title: "Business Development Management",
+// 				price: "$400",
+// 				author: "Dianne Russell"
+// 			},
+// 			{
+// 				id: 6,
+// 				src: "img/main/courses/courses-page/6.png",
+// 				topic: "Design",
+// 				title: "Graphic Design Basic",
+// 				price: "$500",
+// 				author: "Guy Hawkins"
+// 			},
+// 			{
+// 				id: 7,
+// 				src: "img/main/courses/courses-page/7.png",
+// 				topic: "Development",
+// 				title: "Highload Software Architecture",
+// 				price: "$600",
+// 				author: "Brooklyn Simmons"
+// 			},
+// 			{
+// 				id: 8,
+// 				src: "img/main/courses/courses-page/8.png",
+// 				topic: "HR & Recruting",
+// 				title: "Human Resources – Selection and Recruitment",
+// 				price: "$150",
+// 				author: "Kathryn Murphy"
+// 			},
+// 			{
+// 				id: 9,
+// 				src: "img/main/courses/courses-page/9.png",
+// 				topic: "Design",
+// 				title: "User Experience. Human-centered Design",
+// 				price: "$240",
+// 				author: "Cody Fisher"
+// 			},
+// 			{
+//         id: 10,
+//         src: "img/main/courses/courses-page/3.png",
+//         topic: "HR & Recruting",
+//         title: "HR  Management and Analytics",
+//         price: "$200",
+//         author: "Leslie Alexander Li"
+//     },
+//     {
+//         id: 11,
+//         src: "img/main/courses/courses-page/4.png",
+//         topic: "Marketing",
+//         title: "Brand Management & PR Communications Advanced",
+//         price: "$530",
+//         author: "Kristin Watson"
+//     },
+//     {
+//         id: 12,
+//         src: "img/main/courses/courses-page/5.png",
+//         topic: "Management",
+//         title: "Business Development Management Basic",
+//         price: "$400",
+//         author: "Dianne Russell"
+//     },
+//     {
+//         id: 13,
+//         src: "img/main/courses/courses-page/2.png",
+//         topic: "Management",
+//         title: "Product Management Fundamentals",
+//         price: "$480",
+//         author: "Marvin McKinney"
+//     },
+//     {
+//         id: 14,
+//         src: "img/main/courses/courses-page/3.png",
+//         topic: "HR & Recruting",
+//         title: "HR  Management and Analytics Advansed",
+//         price: "$200",
+//         author: "Leslie Alexander Li"
+//     },
+//     {
+//         id: 15,
+//         src: "img/main/courses/courses-page/4.png",
+//         topic: "Marketing",
+//         title: "Brand Management & PR Communications Part 2",
+//         price: "$530",
+//         author: "Kristin Watson"
+//     },{
+//         id: 15,
+//         src: "img/main/courses/courses-page/4.png",
+//         topic: "Marketing",
+//         title: "Brand Management & PR Communications Part 3 Advansed++",
+//         price: "$230",
+//         author: "Kristin Watson"
+//     },
+// ]
+			
+	let courses = {
+	// all: [
+	// {
+    //     id: 1,
+    //     src: "img/main/courses/courses-page/1.png",
+    //     topic: "Marketing",
+    //     title: "The Ultimate Google Ads Training Course",
+    //     price: "$100",
+    //     author: "Jerome Bell"
+    // },
+    // {
+    //     id: 2,
+    //     src: "img/main/courses/courses-page/2.png",
+    //     topic: "Management",
+    //     title: "Product Management Fundamentals",
+    //     price: "$480",
+    //     author: "Marvin McKinney"
+    // },
+    // {
+    //     id: 3,
+    //     src: "img/main/courses/courses-page/3.png",
+    //     topic: "HR & Recruting",
+    //     title: "HR  Management and Analytics",
+    //     price: "$200",
+    //     author: "Leslie Alexander Li"
+    // },
+    // {
+    //     id: 4,
+    //     src: "img/main/courses/courses-page/4.png",
+    //     topic: "Marketing",
+    //     title: "Brand Management & PR Communications",
+    //     price: "$530",
+    //     author: "Kristin Watson"
+    // },
+    // {
+    //     id: 5,
+    //     src: "img/main/courses/courses-page/5.png",
+    //     topic: "Management",
+    //     title: "Business Development Management",
+    //     price: "$400",
+    //     author: "Dianne Russell"
+    // },
+    // {
+    //     id: 6,
+    //     src: "img/main/courses/courses-page/6.png",
+    //     topic: "Design",
+    //     title: "Graphic Design Basic",
+    //     price: "$500",
+    //     author: "Guy Hawkins"
+    // },
+    // {
+    //     id: 7,
+    //     src: "img/main/courses/courses-page/7.png",
+    //     topic: "Development",
+    //     title: "Highload Software Architecture",
+    //     price: "$600",
+    //     author: "Brooklyn Simmons"
+    // },
+    // {
+    //     id: 8,
+    //     src: "img/main/courses/courses-page/8.png",
+    //     topic: "HR & Recruting",
+    //     title: "Human Resources – Selection and Recruitment",
+    //     price: "$150",
+    //     author: "Kathryn Murphy"
+    // },
+    // {
+    //     id: 9,
+    //     src: "img/main/courses/courses-page/9.png",
+    //     topic: "Design",
+    //     title: "User Experience. Human-centered Design",
+    //     price: "$240",
+    //     author: "Cody Fisher"
+    // },
+    // {
+    //     id: 10,
+    //     src: "img/main/courses/courses-page/3.png",
+    //     topic: "HR & Recruting",
+    //     title: "HR  Management and Analytics",
+    //     price: "$200",
+    //     author: "Leslie Alexander Li"
+    // },
+    // {
+    //     id: 11,
+    //     src: "img/main/courses/courses-page/4.png",
+    //     topic: "Marketing",
+    //     title: "Brand Management & PR Communications Advanced",
+    //     price: "$530",
+    //     author: "Kristin Watson"
+    // },
+    // {
+    //     id: 12,
+    //     src: "img/main/courses/courses-page/5.png",
+    //     topic: "Management",
+    //     title: "Business Development Management Basic",
+    //     price: "$400",
+    //     author: "Dianne Russell"
+    // },
+    // {
+    //     id: 13,
+    //     src: "img/main/courses/courses-page/2.png",
+    //     topic: "Management",
+    //     title: "Product Management Fundamentals",
+    //     price: "$480",
+    //     author: "Marvin McKinney"
+    // },
+    // {
+    //     id: 14,
+    //     src: "img/main/courses/courses-page/3.png",
+    //     topic: "HR & Recruting",
+    //     title: "HR  Management and Analytics Advansed",
+    //     price: "$200",
+    //     author: "Leslie Alexander Li"
+    // },
+    // {
+    //     id: 15,
+    //     src: "img/main/courses/courses-page/4.png",
+    //     topic: "Marketing",
+    //     title: "Brand Management & PR Communications Part 2",
+    //     price: "$530",
+    //     author: "Kristin Watson"
+    // },
+	// ],
+    
+	marketing: [
+        {
+            id: 1,
+            src: "img/main/courses/courses-page/1.png",
+            topic: "Marketing",
+            title: "The Ultimate Google Ads Training Course",
+            price: "$100",
+            author: "Jerome Bell"
+        },
+        {
+            id: 4,
+            src: "img/main/courses/courses-page/4.png",
+            topic: "Marketing",
+            title: "Brand Management & PR Communications",
+            price: "$530",
+            author: "Kristin Watson"
+        },
+        {
+            id: 11,
+            src: "img/main/courses/courses-page/4.png",
+            topic: "Marketing",
+            title: "Brand Management & PR Communications Advanced",
+            price: "$530",
+            author: "Kristin Watson"
+        },
+        {
+            id: 15,
+            src: "img/main/courses/courses-page/4.png",
+            topic: "Marketing",
+            title: "Brand Management & PR Communications Part 2",
+            price: "$530",
+            author: "Kristin Watson"
+        },
+    ],
+    management: [
+        {
+            id: 2,
+            src: "img/main/courses/courses-page/2.png",
+            topic: "Management",
+            title: "Product Management Fundamentals",
+            price: "$480",
+            author: "Marvin McKinney"
+        },
+    {
+            id: 5,
+            src: "img/main/courses/courses-page/5.png",
+            topic: "Management",
+            title: "Business Development Management",
+            price: "$400",
+            author: "Dianne Russell"
+        },
+    {
+            id: 12,
+            src: "img/main/courses/courses-page/5.png",
+            topic: "Management",
+            title: "Business Development Management Basic",
+            price: "$400",
+            author: "Dianne Russell"
+        },
+    {
+            id: 13,
+            src: "img/main/courses/courses-page/2.png",
+            topic: "Management",
+            title: "Product Management Fundamentals",
+            price: "$480",
+            author: "Marvin McKinney"
+        },
+    ],
+    hrAndRecruting: [
+        {
+            id: 3,
+            src: "img/main/courses/courses-page/3.png",
+            topic: "HR & Recruting",
+            title: "HR  Management and Analytics",
+            price: "$200",
+            author: "Leslie Alexander Li"
+        },
+    {
+            id: 8,
+            src: "img/main/courses/courses-page/8.png",
+            topic: "HR & Recruting",
+            title: "Human Resources – Selection and Recruitment",
+            price: "$150",
+            author: "Kathryn Murphy"
+        },
+    {
+            id: 10,
+            src: "img/main/courses/courses-page/3.png",
+            topic: "HR & Recruting",
+            title: "HR  Management and Analytics",
+            price: "$200",
+            author: "Leslie Alexander Li"
+        },
+    {
+            id: 14,
+            src: "img/main/courses/courses-page/3.png",
+            topic: "HR & Recruting",
+            title: "HR  Management and Analytics Advansed",
+            price: "$200",
+            author: "Leslie Alexander Li"
+        },
+		{
+            id: 16,
+            src: "img/main/courses/courses-page/3.png",
+            topic: "HR & Recruting",
+            title: "HR  Management and Analytics Advansed",
+            price: "$200",
+            author: "Leslie Alexander Li"
+        },
+    ],
+    design: [
+        {
+            id: 6,
+            src: "img/main/courses/courses-page/6.png",
+            topic: "Design",
+            title: "Graphic Design Basic",
+            price: "$500",
+            author: "Guy Hawkins"
+        },
+    {
+            id: 9,
+            src: "img/main/courses/courses-page/9.png",
+            topic: "Design",
+            title: "User Experience. Human-centered Design",
+            price: "$240",
+            author: "Cody Fisher"
+        },
+    ],
+    development: [
+        {
+            id: 7,
+            src: "img/main/courses/courses-page/7.png",
+            topic: "Development",
+            title: "Highload Software Architecture",
+            price: "$600",
+            author: "Brooklyn Simmons"
+        },
+    ],
+}
+
+// let couseTemplate = document.querySelector("#course-item-template").innerHTML;
+// 		let output = document.querySelector(".courses__items");
+
+// 		for(let i = 0; i < courses.length; i++) {
+// 			const currentArray = courses[i];
+// 			let currentItem;
+
+// 			for(let j = 0; j < currentArray.length; j++) {
+// 				currentItem = currentArray[j];
+// 			}
+
+// 			let renderedHTML = Mustache.render(couseTemplate, currentItem);
+// 			output.insertAdjacentHTML("beforeend", renderedHTML);
+// 		}
+
+// 		let topicSpans = document.querySelectorAll(".item-courses__topic");
+// 		topicSpans.forEach(el => {
+// 			if(el.textContent === "Marketing")
+// 				el.classList.add("marketing-span")
+// 			else if(el.textContent === "Management")
+// 				el.classList.add("management-span")
+// 			else if(el.textContent === "HR & Recruting")
+// 				el.classList.add("hr-span")
+// 			else if(el.textContent === "Design")
+// 				el.classList.add("design-span")
+// 			else if(el.textContent === "Development")
+// 				el.classList.add("development-span")
+// 		});
+		
+		</script>
+		<script src="js/courses/show-items.js"></script>
+		<script src="js/courses/catagories-sort.js"></script>
+	</body>
+</html>

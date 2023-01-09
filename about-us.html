@@ -1,0 +1,1118 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Привет SASS(SCSS)!</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/icon-font-demo.css"/>
+
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container container">
+					<div class="header__row">
+						<div class="header__navigation">
+							<a href="./index.html" class="header__logo-link">
+								<img src="img/icons/logo.svg" alt="">
+							</a>
+							<nav class="header__menu menu-header">
+								<ul class="menu-header__list custom-menu-list-768px">
+									<li class="menu-header__item">
+										<a href="./about-us.html" class="menu-header__link menu-link menu-link--active">About Us</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./courses.html" class="menu-header__link menu-link">Courses</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./events.html" class="menu-header__link menu-link">Events</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./blog.html" class="menu-header__link menu-link">Blog</a>
+									</li>
+									<li class="menu-header__item">
+										<a href="./contacts.html" class="menu-header__link menu-link">Contacts</a>
+									</li>
+									<a href="#" class="menu-header__btn consult-btn">Get consultation</a>
+									<!-- <button class="menu-header__btn login-btn" type="button"><p class="login-btn__text">Log in / Register</p></button> -->
+								</ul>
+							</nav>
+						</div>
+						<div class="header__registration registration">
+							<a href="#" class="registration__get-btn orange-btn">Get consultation</a>
+							<a href="#popup-login" class="registration__login-btn popup-link"><p class="registration__login-btn-text">Log in / Register</p></a>
+							<div class="header__burger-btn">
+								<span></span>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</header>
+			<main class="main">
+
+				<section class="main__school school">
+					<div class="school__conteiner container">
+						<div class="school__inner">
+							<div class="school__body">
+								<div class="school__header">
+									<p class="school__subtitle subtitle">About us</p>
+									<h2 class="school__title title-46px">Createx Online School</h2>
+								</div>
+								<h4 class="school__small-title">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts.</h4>
+								<p class="school__text">We provide relevant approaches to online learning, internships and employment in the largest companies in the country. Our educational programs help you get a new specialty from scratch. During your studies, we will help you find a job. Check the courses and online events that we organise.</p>
+								<div class="school__link-box">
+									<a href="" class="school__link orange-border-btn">Explore events</a>
+									<a href="" class="school__link orange-btn">Browse courses</a>
+								</div>
+							</div>
+							<div class="school__image-box">
+								<img src="img/about-us/online-school/teacher.jpg" alt="" class="school__image">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__statistic statistic">
+					<div class="statistic__container container">
+						<div class="statistic__inner">
+							<a href="#" class="statistic__link">Watch Video</a>
+							<div class="statistic__body">
+								<div class="statistic__image-box">
+									<img src="img/about-us/work.jpg" alt="work" class="statistic__image">
+								</div>
+								<ul class="statistic__list">
+									<!-- <div class="statistic-enjoy__list">
+										<div class="statistic-enjoy__item">
+											<span class="statistic__big-number big-number">1200</span> Students graduated
+										</div>
+										<span class="statistic-enjoy__dot"></span>
+										<div class="statistic-enjoy__item">
+											<span class="statistic__big-number big-number">84</span> Completed courses
+										</div>
+										<span class="statistic-enjoy__dot"></span>
+										<div class="statistic-enjoy__item">
+											<span class="statistic__big-number big-number">16</span> Qualified tutors
+										</div>
+										<span class="statistic-enjoy__dot"></span>
+										<div class="statistic-enjoy__item">
+											<span class="statistic__big-number big-number">5</span> Years of experience
+										</div>
+									</div> -->
+									<li class="statistic__item">
+										<span class="statistic__big-number big-number">1200</span> Students graduated
+									</li>
+									<li class="statistic__item">
+										<span class="statistic__big-number big-number">84</span> Completed courses
+									</li>
+									<li class="statistic__item">
+										<span class="statistic__big-number big-number">16</span> Qualified tutors
+									</li>
+									<li class="statistic__item">
+										<span class="statistic__big-number big-number">5</span> Years of experience
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__core-values core-values">
+					<div class="core-values__container container">
+						<div class="core-values__inner">
+							<div class="core-values__header">
+								<p class="core-values__subtitle subtitle">We always stand for</p>
+								<h2 class="core-values__title title-46px">Our core values</h2>
+							</div>
+							<div class="core-values__row">
+								<div class="core-values__item item-core-values">
+									<div class="item-core-values__image-box">
+										<img src="img/about-us/core-values/ic-structure.svg" alt="ic-structure" class="item-core-values__image">
+									</div>
+									<div class="item-core-values__body">
+										<h4 class="item-core-values__title">Structured Approach</h4>
+										<p class="item-core-values__text">Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris.</p>
+									</div>
+								</div>
+								<div class="core-values__item item-core-values">
+									<div class="item-core-values__image-box">
+										<img src="img/about-us/core-values/ic-chat.svg" alt="ic-chat" class="item-core-values__image">
+									</div>
+									<div class="item-core-values__body">
+										<h4 class="item-core-values__title">Professional Feedbacks</h4>
+										<p class="item-core-values__text">Culpa nostrud commodo ea consequat reprehenderit aliquip.</p>
+									</div>
+								</div>
+								<div class="core-values__item item-core-values">
+									<div class="item-core-values__image-box">
+										<img src="img/about-us/core-values/ic-target.svg" alt="ic-target" class="item-core-values__image">
+									</div>
+									<div class="item-core-values__body">
+										<h4 class="item-core-values__title">Efficiency</h4>
+										<p class="item-core-values__text">Viverra scelerisque consequat net. Adipisicing esse consequat.</p>
+									</div>
+								</div>
+								<div class="core-values__item item-core-values">
+									<div class="item-core-values__image-box">
+										<img src="img/about-us/core-values/ic-calendar.svg" alt="ic-calendar" class="item-core-values__image">
+									</div>
+									<div class="item-core-values__body">
+										<h4 class="item-core-values__title">Flexible Shedule</h4>
+										<p class="item-core-values__text">Aute eiusmod dolore dolore deserunt veniam ad deserunt.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__directions directions">
+					<div class="directions__container container">
+						<div class="directions__inner">
+							<div class="directions__header">
+								<p class="directions__subtitle subtitle">our main directions</p>
+								<h2 class="directions__title title-46px">What do we teach</h2>
+							</div>
+							<div class="directions__content">
+								<div class="directions__course-item course-item">
+									<div class="course-item__image-box">
+										<img src="img/about-us/directions/image.jpg" alt="" class="course-item__img">
+									</div>
+									<div class="course-item__body">
+										<span class="course-item__kind-of-cource marketing-span">Marketing</span>
+										<p class="course-item__about-text">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.</p>
+										<a href="" class="course-item__link">Check courses</a>
+									</div>
+								</div>
+								<div class="directions__course-item course-item">
+									<div class="course-item__image-box">
+										<img src="img/about-us/directions/image-2.jpg" alt="" class="course-item__img">
+									</div>
+									<div class="course-item__body">
+										<span class="course-item__kind-of-cource management-span">Management</span>
+										<p class="course-item__about-text">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.</p>
+										<a href="" class="course-item__link">Check courses</a>
+									</div>
+								</div>
+								<div class="directions__course-item course-item">
+									<div class="course-item__image-box">
+										<img src="img/about-us/directions/image-3.jpg" alt="" class="course-item__img">
+									</div>
+									<div class="course-item__body">
+										<span class="course-item__kind-of-cource hr-span">HR & Recruting</span>
+										<p class="course-item__about-text">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.</p>
+										<a href="" class="course-item__link">Check courses</a>
+									</div>
+								</div>
+								<div class="directions__course-item course-item">
+									<div class="course-item__image-box">
+										<img src="img/about-us/directions/image-4.jpg" alt="" class="course-item__img">
+									</div>
+									<div class="course-item__body">
+										<span class="course-item__kind-of-cource design-span">Design</span>
+										<p class="course-item__about-text">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.</p>
+										<a href="" class="course-item__link">Check courses</a>
+									</div>
+								</div>
+								<div class="directions__course-item course-item">
+									<div class="course-item__image-box">
+										<img src="img/about-us/directions/image-5.jpg" alt="" class="course-item__img">
+									</div>
+									<div class="course-item__body">
+										<span class="course-item__kind-of-cource development-span">Development</span>
+										<p class="course-item__about-text">Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.</p>
+										<a href="" class="course-item__link">Check courses</a>
+									</div>
+								</div>
+								<div class="directions__course-item course-item-soon course-item">
+									<p class="course-item-soon__text">New studying program coming soon...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__process process">
+					<div class="process__container container">
+						<div class="process__inner">
+							<div class="process__header">
+								<p class="process__subtitle subtitle">Studying process</p>
+								<h2 class="process__title title-46px">That’s how we do it</h2>
+							</div>
+							<div class="process__content">
+								<div class="process__body">
+									<ul class="process__list">
+										<li class="process__item">
+											<span class="process__step">STEP 1</span>
+											<h4 class="process__topic">Watching online video lectures</h4>
+											<p class="process__text">Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa neque.</p>
+										</li>
+										<li class="process__item">
+											<span class="process__step">STEP 2</span>
+											<h4 class="process__topic">Passing test</h4>
+											<p class="process__text">Facilisis pellentesque quis accumsan ultricies. Eu egestas eget feugiat lacus, amet, sollicitudin egestas laoreet etiam.</p>
+										</li>
+										<li class="process__item">
+											<span class="process__step">STEP 3</span>
+											<h4 class="process__topic">Curator’s feedback</h4>
+											<p class="process__text">Eget amet, enim pharetra leo egestas nisi, odio imperdiet facilisis. Aliquet orci varius volutpat egestas facilisi lobortis. </p>
+										</li>
+										<li class="process__item">
+											<span class="process__step">STEP 4</span>
+											<h4 class="process__topic">Corrections if needed</h4>
+											<p class="process__text">Non tempor pulvinar tincidunt aliquam. Placerat ultricies malesuada dui auctor.</p>
+										</li>
+									</ul>
+								</div>
+								<div class="process__img-box">
+									<img src="img/about-us/studing-process/illustration.png" alt="illustration" class="process__image">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__tutors tutors">
+					<div class="tutors__container container">
+						<div class="tutors__inner">
+							<div class="tutors__header">
+								<p class="tutors__subtitle subtitle">Best tutors are all here</p>
+								<h2 class="tutors__title title-46px">Meet our team</h2>
+							</div>
+							<div class="tutors__content">
+								<div class="tutors__item">
+									<div class="tutors__image-box">
+										<img src="img/about-us/tutors/1.png" alt="" class="tutors__image">
+										<div class="tutors__hover-content">
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-facebook.svg" alt="Facebook">
+											</a>
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-instagram.svg" alt="Instagram">
+											</a>
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-linked-In.svg" alt="Linked-In">
+											</a>
+										</div>
+									</div>
+									<div class="tutors__person-info person-info">
+										<h4 class="person-info__name">Dianne Russell</h4>
+										<p class="person-info__position">Founder and CEO</p>
+									</div>
+								</div>
+								<div class="tutors__item">
+									<div class="tutors__image-box">
+										<img src="img/about-us/tutors/2.png" alt="" class="tutors__image">
+										<div class="tutors__hover-content">
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-facebook.svg" alt="Facebook">
+											</a>
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-instagram.svg" alt="Instagram">
+											</a>
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-linked-In.svg" alt="Linked-In">
+											</a>
+										</div>
+									</div>
+									<div class="tutors__person-info person-info">
+										<h4 class="person-info__name">Jerome Bell</h4>
+										<p class="person-info__position">Founder and Program Director</p>
+									</div>
+								</div>
+								<div class="tutors__item">
+									<div class="tutors__image-box">
+										<img src="img/about-us/tutors/3.png" alt="" class="tutors__image">
+										<div class="tutors__hover-content">
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-facebook.svg" alt="Facebook">
+											</a>
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-instagram.svg" alt="Instagram">
+											</a>
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-linked-In.svg" alt="Linked-In">
+											</a>
+										</div>
+									</div>
+									<div class="tutors__person-info person-info">
+										<h4 class="person-info__name">Kristin Watson</h4>
+										<p class="person-info__position">Marketer, Curator of Marketing Course</p>
+									</div>
+								</div>
+								<div class="tutors__item">
+									<div class="tutors__image-box">
+										<img src="img/about-us/tutors/4.png" alt="" class="tutors__image">
+										<div class="tutors__hover-content">
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-facebook.svg" alt="Facebook">
+											</a>
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-instagram.svg" alt="Instagram">
+											</a>
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-linked-In.svg" alt="Linked-In">
+											</a>
+										</div>
+									</div>
+									<div class="tutors__person-info person-info">
+										<h4 class="person-info__name">Marvin McKinney</h4>
+										<p class="person-info__position">PM, Curator of Management Course</p>
+									</div>
+								</div>
+								<div class="tutors__item">
+									<div class="tutors__image-box">
+										<img src="img/about-us/tutors/5.png" alt="" class="tutors__image">
+										<div class="tutors__hover-content">
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-facebook.svg" alt="Facebook">
+											</a>
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-instagram.svg" alt="Instagram">
+											</a>
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-linked-In.svg" alt="Linked-In">
+											</a>
+										</div>
+									</div>
+									<div class="tutors__person-info person-info">
+										<h4 class="person-info__name">Leslie Alexander Li</h4>
+										<p class="person-info__position">Curator of HR & Recruting Course</p>
+									</div>
+								</div>
+								<div class="tutors__item">
+									<div class="tutors__image-box">
+										<img src="img/about-us/tutors/6.png" alt="" class="tutors__image">
+										<div class="tutors__hover-content">
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-facebook.svg" alt="Facebook">
+											</a>
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-instagram.svg" alt="Instagram">
+											</a>
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-linked-In.svg" alt="Linked-In">
+											</a>
+										</div>
+									</div>
+									<div class="tutors__person-info person-info">
+										<h4 class="person-info__name">Kathryn Murphy</h4>
+										<p class="person-info__position">Analyst and Marketing specialist</p>
+									</div>
+								</div>
+								<div class="tutors__item">
+									<div class="tutors__image-box">
+										<img src="img/about-us/tutors/7.png" alt="" class="tutors__image">
+										<div class="tutors__hover-content">
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-facebook.svg" alt="Facebook">
+											</a>
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-instagram.svg" alt="Instagram">
+											</a>
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-linked-In.svg" alt="Linked-In">
+											</a>
+										</div>
+									</div>
+									<div class="tutors__person-info person-info">
+										<h4 class="person-info__name">Brooklyn Simmons</h4>
+										<p class="person-info__position">Curator of Development Course</p>
+									</div>
+								</div>
+								<div class="tutors__item">
+									<div class="tutors__image-box">
+										<img src="img/about-us/tutors/8.png" alt="" class="tutors__image">
+										<div class="tutors__hover-content">
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-facebook.svg" alt="Facebook">
+											</a>
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-instagram.svg" alt="Instagram">
+											</a>
+											<a href="" class="tutors__hover-link">
+												<img src="img/about-us/tutors/icons/white-linked-In.svg" alt="Linked-In">
+											</a>
+										</div>
+									</div>
+									<div class="tutors__person-info person-info">
+										<h4 class="person-info__name">Cody Fisher</h4>
+										<p class="person-info__position">UX Designer, Curator of Design Course</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__slider-box slider-box about-us-slider">
+					<div class="main__meet meet">
+						<div class="meet__container container">
+							<div class="meet__inner">
+								<div class="meet__header">
+									<p class="meet__subtitle subtitle">Best tutors are all here</p>
+									<h2 class="meet__title title-46px">Meet our team</h2>
+								</div>
+								<div class="meet__content">
+									<div class="meet__slider slider-meet">
+										<div class="slider-meet__item">
+											<div class="slider-meet__image-box">
+												<img src="img/main/team/1.png" alt="" class="slider-meet__image">
+												<div class="slider-meet__hover-content">
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-facebook.svg" alt="Facebook">
+													</a>
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-instagram.svg" alt="Instagram">
+													</a>
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-linked-In.svg" alt="Linked-In">
+													</a>
+												</div>
+											</div>
+											<div class="slider-meet__person-info slider-person-info">
+												<h4 class="slider-person-info__name">Dianne Russell</h4>
+												<p class="slider-person-info__position">Founder and CEO</p>
+											</div>
+										</div>
+										<div class="slider-meet__item">
+											<div class="slider-meet__image-box">
+												<img src="img/main/team/2.png" alt="" class="slider-meet__image">
+												<div class="slider-meet__hover-content">
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-facebook.svg" alt="Facebook">
+													</a>
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-instagram.svg" alt="Instagram">
+													</a>
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-linked-In.svg" alt="Linked-In">
+													</a>
+												</div>
+											</div>
+											<div class="slider-meet__person-info slider-person-info">
+												<h4 class="slider-person-info__name">Jerome Bell</h4>
+												<p class="slider-person-info__position">Founder and Program Director</p>
+											</div>
+										</div>
+										<div class="slider-meet__item">
+											<div class="slider-meet__image-box">
+												<img src="img/main/team/3.png" alt="" class="slider-meet__image">
+												<div class="slider-meet__hover-content">
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-facebook.svg" alt="Facebook">
+													</a>
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-instagram.svg" alt="Instagram">
+													</a>
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-linked-In.svg" alt="Linked-In">
+													</a>
+												</div>
+											</div>
+											<div class="slider-meet__person-info slider-person-info">
+												<h4 class="slider-person-info__name">Kristin Watson</h4>
+												<p class="slider-person-info__position">Marketer, Curator of Marketing Course</p>
+											</div>
+										</div>
+										<div class="slider-meet__item">
+											<div class="slider-meet__image-box">
+												<img src="img/main/team/4.png" alt="" class="slider-meet__image">
+												<div class="slider-meet__hover-content">
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-facebook.svg" alt="Facebook">
+													</a>
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-instagram.svg" alt="Instagram">
+													</a>
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-linked-In.svg" alt="Linked-In">
+													</a>
+												</div>
+											</div>
+											<div class="slider-meet__person-info slider-person-info">
+												<h4 class="slider-person-info__name">Marvin McKinney</h4>
+												<p class="slider-person-info__position">PM, Curator of Management Course</p>
+											</div>
+										</div>
+										<div class="slider-meet__item">
+											<div class="slider-meet__image-box">
+												<img src="img/main/team/5.png" alt="" class="slider-meet__image">
+												<div class="slider-meet__hover-content">
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-facebook.svg" alt="Facebook">
+													</a>
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-instagram.svg" alt="Instagram">
+													</a>
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-linked-In.svg" alt="Linked-In">
+													</a>
+												</div>
+											</div>
+											<div class="slider-meet__person-info person-info">
+												<h4 class="person-info__name">Leslie Alexander Li</h4>
+												<p class="person-info__position">Curator of HR & Recruting Course</p>
+											</div>
+										</div>
+										<div class="slider-meet__item">
+											<div class="slider-meet__image-box">
+												<img src="img/main/team/6.png" alt="" class="slider-meet__image">
+												<div class="slider-meet__hover-content">
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-facebook.svg" alt="Facebook">
+													</a>
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-instagram.svg" alt="Instagram">
+													</a>
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-linked-In.svg" alt="Linked-In">
+													</a>
+												</div>
+											</div>
+											<div class="slider-meet__person-info person-info">
+												<h4 class="person-info__name">Kathryn Murphy</h4>
+												<p class="person-info__position">Analyst and Marketing specialist</p>
+											</div>
+										</div>
+										<div class="slider-meet__item">
+											<div class="slider-meet__image-box">
+												<img src="img/main/team/7.png" alt="" class="slider-meet__image">
+												<div class="slider-meet__hover-content">
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-facebook.svg" alt="Facebook">
+													</a>
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-instagram.svg" alt="Instagram">
+													</a>
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-linked-In.svg" alt="Linked-In">
+													</a>
+												</div>
+											</div>
+											<div class="slider-meet__person-info person-info">
+												<h4 class="person-info__name">Brooklyn Simmons</h4>
+												<p class="person-info__position">Curator of Development Course</p>
+											</div>
+										</div>
+										<div class="slider-meet__item">
+											<div class="slider-meet__image-box">
+												<img src="img/main/team/8.png" alt="" class="slider-meet__image">
+												<div class="slider-meet__hover-content">
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-facebook.svg" alt="Facebook">
+													</a>
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-instagram.svg" alt="Instagram">
+													</a>
+													<a href="" class="slider-meet__hover-link">
+														<img src="img/main/team/icons/white-linked-In.svg" alt="Linked-In">
+													</a>
+												</div>
+											</div>
+											<div class="slider-meet__person-info person-info">
+												<h4 class="person-info__name">Cody Fisher</h4>
+												<p class="person-info__position">UX Designer, Curator of Design Course</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<ul class="slider-box__icons-bg-list">
+								<li class="slider-box__icon-bg"><img src="img/icons/main/dots.svg" alt="" class="slider-box__icon-image"></li>
+								<li class="slider-box__icon-bg"><img src="img/icons/main/circles.svg" alt="" class="slider-box__icon-image"></li>
+								<li class="slider-box__icon-bg"><img src="img/icons/main/shapes (2).svg" alt="" class="slider-box__icon-image"></li>
+								<li class="slider-box__icon-bg"><img src="img/icons/main/shapes.svg" alt="" class="slider-box__icon-image"></li>
+								<li class="slider-box__icon-bg"><img src="img/icons/main/Vector.svg" alt="" class="slider-box__icon-image"></li>
+								<li class="slider-box__icon-bg"><img src="img/icons/main/dot.svg" alt="" class="slider-box__icon-image"></li>
+								<li class="slider-box__icon-bg"><img src="img/icons/main/big-circkes.svg" alt="" class="slider-box__icon-image"></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__testimonials testimonials">
+					<div class="testimonials__container container">
+						<div class="testimonials__inner">
+							<div class="testimonials__header">
+								<p class="testimonials__subtitle subtitle">TESTIMONIALS</p>
+								<h2 class="testimonials__title title-46px">What our students say</h2>
+							</div>
+							<div class="testimonials__content">
+								<div class="testimonials__slider slider-testimonials">
+									<div class="slider-testimonials__item item-testimonials-slider">
+										<div class="item-testimonials-slider__content">
+											<p class="item-testimonials-slider__review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+											<div class="item-testimonials-slider__reviewer">
+												<div class="item-testimonials-slider__reviewer-image-box">
+													<img src="img/main/testimonials/reviewer-img.jpg" alt="reviewer-img" class="item-testimonials-slider__reviewer-image">
+												</div>
+												<div class="item-testimonials-slider__reviewer-info">
+													<p class="item-testimonials-slider__reviewer-name">Eleanor Pena</p>
+													<p class="item-testimonials-slider__reviewer-position">Position, Course</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slider-testimonials__item item-testimonials-slider">
+										<div class="item-testimonials-slider__content">
+											<p class="item-testimonials-slider__review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+											<div class="item-testimonials-slider__reviewer">
+												<div class="item-testimonials-slider__reviewer-image-box">
+													<img src="img/main/testimonials/reviewer-img.jpg" alt="reviewer-img" class="item-testimonials-slider__reviewer-image">
+												</div>
+												<div class="item-testimonials-slider__reviewer-info">
+													<p class="item-testimonials-slider__reviewer-name">Eleanor Pena</p>
+													<p class="item-testimonials-slider__reviewer-position">Position, Course</p>
+												</div>
+											</div>	
+										</div>
+									</div>
+									<div class="slider-testimonials__item item-testimonials-slider">
+										<div class="item-testimonials-slider__content">
+											<p class="item-testimonials-slider__review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+											<div class="item-testimonials-slider__reviewer">
+												<div class="item-testimonials-slider__reviewer-image-box">
+													<img src="img/main/testimonials/reviewer-img.jpg" alt="reviewer-img" class="item-testimonials-slider__reviewer-image">
+												</div>
+												<div class="item-testimonials-slider__reviewer-info">
+													<p class="item-testimonials-slider__reviewer-name">Eleanor Pena</p>
+													<p class="item-testimonials-slider__reviewer-position">Position, Course</p>
+												</div>
+											</div>	
+										</div>
+										
+									</div>
+									<div class="slider-testimonials__item item-testimonials-slider">
+										<div class="item-testimonials-slider__content">
+											<p class="item-testimonials-slider__review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+											<div class="item-testimonials-slider__reviewer">
+												<div class="item-testimonials-slider__reviewer-image-box">
+													<img src="img/main/testimonials/reviewer-img.jpg" alt="reviewer-img" class="item-testimonials-slider__reviewer-image">
+												</div>
+												<div class="item-testimonials-slider__reviewer-info">
+													<p class="item-testimonials-slider__reviewer-name">Eleanor Pena</p>
+													<p class="item-testimonials-slider__reviewer-position">Position, Course</p>
+												</div>
+											</div>	
+										</div>
+										
+									</div>
+									<div class="slider-testimonials__item item-testimonials-slider">
+										<div class="item-testimonials-slider__content">
+											<p class="item-testimonials-slider__review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.</p>
+											<div class="item-testimonials-slider__reviewer">
+												<div class="item-testimonials-slider__reviewer-image-box">
+													<img src="img/main/testimonials/reviewer-img.jpg" alt="reviewer-img" class="item-testimonials-slider__reviewer-image">
+												</div>
+												<div class="item-testimonials-slider__reviewer-info">
+													<p class="item-testimonials-slider__reviewer-name">Eleanor Pena</p>
+													<p class="item-testimonials-slider__reviewer-position">Position, Course</p>
+												</div>
+											</div>	
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__jobs jobs">
+					<div class="jobs__container container">
+						<div class="jobs__inner">
+							<div class="jobs__header">
+								<p class="jobs__subtitle subtitle">best jobs for you</p>
+								<h2 class="jobs__title title-46px">Our students work here</h2>
+							</div>
+							<div class="jobs__content">
+								<img src="img/about-us/companies/1.svg" alt="" class="jobs__company-img">
+								<img src="img/about-us/companies/2.svg" alt="" class="jobs__company-img">
+								<img src="img/about-us/companies/3.svg" alt="" class="jobs__company-img">
+								<img src="img/about-us/companies/4.svg" alt="" class="jobs__company-img">
+								<img src="img/about-us/companies/5.svg" alt="" class="jobs__company-img">
+								<img src="img/about-us/companies/6.svg" alt="" class="jobs__company-img">
+								<img src="img/about-us/companies/7.svg" alt="" class="jobs__company-img">
+								<img src="img/about-us/companies/8.svg" alt="" class="jobs__company-img">
+								<img src="img/about-us/companies/9.svg" alt="" class="jobs__company-img">
+								<img src="img/about-us/companies/10.svg" alt="" class="jobs__company-img">
+								<img src="img/about-us/companies/11.svg" alt="" class="jobs__company-img">
+								<img src="img/about-us/companies/4.svg" alt="" class="jobs__company-img">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__latest-posts latest-posts">
+					<div class="latest-posts__container container">
+						<div class="latest-posts__inner">
+							<div class="latest-posts__header">
+								<div class="latest-posts__content">
+									<div class="latest-posts__body">
+										<p class="latest-posts__subtitle subtitle">Our blog</p>
+										<h2 class="latest-posts__title title-46px">Latest posts</h2>
+									</div>
+									<a href="" class="latest-posts__link orange-btn">Go to blog</a>
+								</div>
+							</div>
+							<div class="latest-posts__main-content">
+								<ul class="latest-posts__articles-list">
+									<li class="latest-posts__articles-item item-latest-posts">
+										<div class="item-latest-posts__image-box">
+											<a href="" class="item-latest-posts__option icon-mic">Podcast</a>
+											<a href="" class="item-latest-posts__image-link">
+												<img src="img/main/latest-posts/1.jpg" alt="" class="item-latest-posts__image">
+											</a>
+											
+										</div>
+										<div class="item-latest-posts__info">
+											<span class="item-latest-posts__bold-span">Marketing</span> |
+											<span class="item-latest-posts__data-span icon-calendar">September 4, 2020</span> |
+											<span class="item-latest-posts__time-span icon-clock">36 min</span>
+										</div>
+										<div class="item-latest-posts__body">
+											<a href="#" class="item-latest-posts__article-title">What is traffic arbitrage and does it really make money?</a>
+											<p class="item-latest-posts__text">Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...</p>
+										</div>
+										<a href="#" class="item-latest-posts__link">Listen</a>
+									</li>
+									<li class="latest-posts__articles-item item-latest-posts">
+										<div class="item-latest-posts__image-box">
+											<a href="" class="item-latest-posts__option icon-play">Article</a>
+											<a href="" class="item-latest-posts__image-link">
+												<img src="img/main/latest-posts/2.jpg" alt="" class="item-latest-posts__image">
+											</a>
+											
+										</div>
+										<div class="item-latest-posts__info">
+											<span class="item-latest-posts__bold-span">Management</span> |
+											<span class="item-latest-posts__data-span icon-calendar">August 25, 2020</span>|
+											<span class="item-latest-posts__time-span icon-clock">45 min</span>
+										</div>
+										<div class="item-latest-posts__body">
+											<a href="#" class="item-latest-posts__article-title">What to do and who to talk to if you want to get feedback on the product</a>
+											<p class="item-latest-posts__text">Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus...</p>
+										</div>
+										<a href="#" class="item-latest-posts__link">Watch</a>
+									</li>
+									<li class="latest-posts__articles-item item-latest-posts">
+										<div class="item-latest-posts__image-box">
+											<a href="" class="item-latest-posts__option icon-file">Article</a>
+											<a href="" class="item-latest-posts__image-link">
+												<img src="img/main/latest-posts/3.jpg" alt="" class="item-latest-posts__image">
+											</a>
+											
+										</div>
+										<div class="item-latest-posts__info">
+											<span class="item-latest-posts__bold-span">Design</span> |
+											<span class="item-latest-posts__data-span icon-calendar">August 8, 2020</span>
+										</div>
+										<div class="item-latest-posts__body">
+											<a href="#" class="item-latest-posts__article-title">Should you choose a creative profession if you are attracted to creativity?</a>
+											<p class="item-latest-posts__text">Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...</p>
+										</div>
+										<a href="#" class="item-latest-posts__link">Read</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__subcribe subscribe">
+					<div class="subscribe__container container">
+						<p class="subscribe__subtitle">Don’t miss anything</p>
+						<h2 class="subscribe__title title">Subscribe to the Createx School announcements</h2>
+						<form class="subscribe__form form-subscribe">
+							<input required class="form-subscribe__email" type="email" pattern="+@gmail.com" placeholder="Your working email">
+							<button class="form-subscribe__sent-btn" >Subscribe</button>
+						</form>	
+					</div>
+				</section>
+				<div class="main__container container">
+					
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="footer__container container">
+					<div class="footer__row">
+						<div class="footer__about-company about-company">
+							<img src="img/icons/white-bg-logo.svg" alt="Footer logo" class="about-company__logo">
+							<p class="about-company__text-info">Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country. </p>
+							<ul class="about-company__socials-list">
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Facebook.svg" alt="facebook" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Twitter.svg" alt="twitter" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/YouTube.svg" alt="youtube" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/telegram.svg" alt="telegram" class="about-company__socials-img">
+									</a>					
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Instagram.svg" alt="instagram" class="about-company__socials-img">
+									</a>	
+								</li>
+								<li class="about-company__socials-item">
+									<a href="#" class="about-company__socials-link">
+										<img src="img/main/footer/Linked-In.svg" alt="linkedIn" class="about-company__socials-img">
+									</a>
+								</li> 
+							</ul>
+						</div>
+						<nav class="footer__menu menu-footer">
+							<div class="menu-footer__additionals">
+								<div class="menu-footer__site-map">
+									<h3 class="menu-footer__list-title">site map</h3>
+									<ul class="menu-footer__site-map-list">
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">About Us</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Courses</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Events</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Blog</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Contacts</a>
+										</li>
+									</ul>	
+								</div>
+								<div class="menu-footer__courses">
+									<h3 class="menu-footer__list-title">COURSES</h3>
+									<ul class="menu-footer__courses-list">
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Marketing</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Management</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">HR & Recruting</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Design</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Development</a>
+										</li>
+									</ul>	
+								</div>
+								<div class="menu-footer__contact-us">
+									<h3 class="menu-footer__list-title">CONTACT US</h3>
+									<ul class="menu-footer__contact-us-list contact-us-list">
+										<li class="menu-footer__item contact-us-list__item">
+											<a href="tel:+(405) 555-0128" class="menu-footer__link">(405) 555-0128</a>
+										</li>
+										<li class="menu-footer__item contact-us-list__item">
+											<a href="mailto:hello@createx.com" class="menu-footer__link">hello@createx.com</a>
+										</li>
+									</ul>	
+								</div>
+							</div>
+							<form class="menu-footer__form form-footer">
+								<h3 class="form-footer__title menu-footer__list-title">SIGN UP TO OUR NEWSLETTER</h3>
+								<div class="form-footer__input-block">
+									<input required type="email" placeholder="Email address" pattern="+@gmail.com" class="form-footer__email">
+									<button href="#" class="form-footer__sent-btn">
+										<img src="img/icons/white-arrow.svg" alt="arrow">
+									</button>	
+								</div>
+								<p class="form-footer__agree-text">*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.</p>
+							</form>
+						</nav>
+					</div>
+				</div>
+				<div class="footer__copyrights copyrights-footer">
+					<div class="copyrights-footer__container container">
+						<p class="copyrights-footer__text">© All rights reserved.Made with <img src="img/icons/Heart.svg" alt="heart"> by Createx Studio </p>
+						<a href="#" class="copyrights-footer__gototop-btn">GO TO TOP</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div class="popup-login popup" id="popup-login">
+			<div class="popup-login__body popup__body">
+				<div class="popup-login__content popup__content">
+					<a href="#" class="popup-login__close-btn close-btn">
+						<img src="img/icons/sign-in/cross.svg" alt="cross">
+					</a>
+					<div class="popup-login__sign-in-body sign-in">
+						<h2 class="sign-in__title popup-title">Sign in</h2>
+						<p class="sign-in__text popup-text">Sign in to your account using email and password provided during registration.</p>
+					</div>
+					<form class="popup-login__form form-sign-in">
+						<label for="" class="form-sign-in__email-label label">Email</label>
+						<input required type="email" class="form-sign-in__email log-input" pattern=".+@gmail.com" reqired placeholder="Your working email">
+						<label for="" class="form-sign-in__password-label label">Password</label>
+						<input required type="password" class="form-sign-in__password log-input" placeholder="Password" minlength="6" maxlength="14">
+						<div class="form-sign-in__check-forgot">
+							<label for="" class="form-sign-in__checkbox-label">
+								<input type="checkbox" class="form-sign-in__checkbox">
+								<span class="form-sign-in__checkbox-image"></span>
+								Keep me signed in
+							</label>
+							<a href="#" class="form-sign-in__forgot-pass">Forgot password?</a>
+						</div>
+						<button class="form-sign-in__button popup-form-button">Sign in</button>
+						<p class="form-sign-in__is-have-acc">Don't have an account? 
+							<a href="#popup-sign-up" class="form-sign-in__sign-up-btn popup-link">Sign up</a>
+						</p>
+					</form>
+					<div class="popup-login__sign-in-with sign-in-with">
+						<p class="sign-in-with__text">Or sign in with</p>
+						<ul class="sign-in-with__list">
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-facebook">
+									<!-- <img src="img/icons/sign-in/Facebook.svg" alt="Facebook" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-google">
+									<!-- <img src="img/icons/sign-in/Google.svg" alt="Google" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-twitter">
+									<!-- <img src="img/icons/sign-in/Twitter.svg" alt="Twitter" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-linked-in">
+									<!-- <img src="img/icons/sign-in/Linked-In.svg" alt="Linked-In" class="sign-in-with__img"> -->
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup-sing-up popup" id="popup-sign-up">
+			<div class="popup-sign-up popup__body">
+				<div class="popup-sign-in__content popup__content">
+					<a href="#" class="popup-sign-in__close-btn close-btn">
+						<img src="img/icons/sign-in/cross.svg" alt="cross">
+					</a>
+					<div class="popup-sing-up__body sign-up-body">
+						<h2 class="sign-up-body__title popup-title">Sign up</h2>
+						<p class="sign-up-body__text popup-text">Registration takes less than a minute but gives you full control over your studying.</p>
+					</div>
+					<form class="popup-sign-up__form form-sign-up">
+						<label for="" class="form-sign-up__full-name-label label">Full Name</label>
+						<input required type="text" class="form-sign-up__full-name-input log-input" placeholder="Your full name">
+						<label for="" class="form-sign-up__email-label label">Email</label>
+						<input required type="email" pattern=".+@gmail.com" class="form-sign-up__email log-input" pattern=".+@gmail.com" placeholder="Your working email">
+						<label for="" class="form-sign-up__password-label label">Password</label>
+						<input required name="passwordInput" type="password" class="form-sign-up__password log-input" placeholder="Password" minlength="6" maxlength="14">
+						<label for="" class="form-sign-up__password-label label">Confirm Password</label>
+						<input required name="passwordConfirmInput" type="password" class="form-sign-up__confirm-password log-input" placeholder="Confirm Password" minlength="6" maxlength="14">
+						<div class="form-sign-up__check-remember-me">
+							<label for="" class="form-sign-in__checkbox-label">
+								<input type="checkbox" class="form-sign-in__checkbox">
+								<span class="form-sign-in__checkbox-image"></span>
+								Remember me
+							</label>	
+						</div>
+						<button class="form-sign-up__button popup-form-button">Sign in</button>
+						<p class="form-sign-up__is-have-acc">Already have an account?
+							<a href="#popup-login" class="form-sign-up__sign-up-btn popup-link">Sign in</a>
+						</p>
+					</form>
+					<div class="popup-login__sign-in-with sign-in-with">
+						<p class="sign-in-with__text">Or sign in with</p>
+						<ul class="sign-in-with__list">
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-facebook">
+									<!-- <img src="img/icons/sign-in/Facebook.svg" alt="Facebook" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-google">
+									<!-- <img src="img/icons/sign-in/Google.svg" alt="Google" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-twitter">
+									<!-- <img src="img/icons/sign-in/Twitter.svg" alt="Twitter" class="sign-in-with__img"> -->
+								</a>
+							</li>
+							<li class="sign-in-with__item">
+								<a href="" class="sign-in-with__link icon-linked-in">
+									<!-- <img src="img/icons/sign-in/Linked-In.svg" alt="Linked-In" class="sign-in-with__img"> -->
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+
+		<script src="js/testimonials-slider.js"></script>
+		<script src="js/header-burger.js"></script>
+		<script src="js/popup.js"></script>
+		<script src="js/password-confirm-validation.js"></script>
+		<script src="js/main-tabs.js"></script>
+		<script src="js/main-spoiler.js"></script>
+		<script src="js/back-to-top.js"></script>
+		<script src="js/hide-header.js"></script>
+		<!-- <script src="#source/js/popup.js"></script> -->
+		<script>
+
+			$(document).ready(function(){
+				$('.slider-meet').slick({
+					slidesToShow: 4,
+					arrows: true,
+					fade: false,
+					prevArrow: '<button type="button" class="slick-prev slider-meet-prev-btn icon-prev-btn"></button>',
+					nextArrow: '<button type="button" class="slick-next slider-meet-next-btn icon-next-btn"></button>',
+					responsive: [{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 3,
+						}
+					}, 
+					{
+						breakpoint: 620,
+						settings: {
+							slidesToShow: 2,
+							arrows: false,
+							autoplay:true,
+							autoplaySpeed: 1600,
+						}}]
+				});
+			});
+
+			
+		</script>
+	</body>
+</html>
